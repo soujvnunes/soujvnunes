@@ -1,7 +1,8 @@
 // @ts-check
-import { defineConfig, globalIgnores } from "eslint/config";
-import nextVitals from "eslint-config-next/core-web-vitals";
-import nextTs from "eslint-config-next/typescript";
+import { defineConfig, globalIgnores } from 'eslint/config'
+import nextVitals from 'eslint-config-next/core-web-vitals'
+import nextTs from 'eslint-config-next/typescript'
+import unusedImports from 'eslint-plugin-unused-imports'
 
 const eslintConfig = defineConfig([
   ...nextVitals,
@@ -9,91 +10,96 @@ const eslintConfig = defineConfig([
 
   // Global ignores
   globalIgnores([
-    ".next/**",
-    "out/**",
-    "build/**",
-    "node_modules/**",
-    "next-env.d.ts",
-    "*.config.{js,mjs,ts}",
+    '.next/**',
+    'out/**',
+    'build/**',
+    'node_modules/**',
+    'next-env.d.ts',
+    '*.config.{js,mjs,ts}',
   ]),
 
   // TypeScript/React rules
   {
-    files: ["**/*.{ts,tsx}"],
+    files: ['**/*.{ts,tsx}'],
+    plugins: {
+      'unused-imports': unusedImports,
+    },
     rules: {
-      // TypeScript
-      "@typescript-eslint/no-unused-vars": [
-        "warn",
+      // Unused imports (auto-fixable)
+      '@typescript-eslint/no-unused-vars': 'off',
+      'unused-imports/no-unused-imports': 'warn',
+      'unused-imports/no-unused-vars': [
+        'warn',
         {
-          argsIgnorePattern: "^_",
-          varsIgnorePattern: "^_",
-          caughtErrorsIgnorePattern: "^_",
+          argsIgnorePattern: '^_',
+          varsIgnorePattern: '^_',
+          caughtErrorsIgnorePattern: '^_',
         },
       ],
-      "@typescript-eslint/consistent-type-imports": [
-        "warn",
+      '@typescript-eslint/consistent-type-imports': [
+        'warn',
         {
-          prefer: "type-imports",
-          fixStyle: "inline-type-imports",
+          prefer: 'type-imports',
+          fixStyle: 'inline-type-imports',
         },
       ],
-      "@typescript-eslint/no-import-type-side-effects": "warn",
+      '@typescript-eslint/no-import-type-side-effects': 'warn',
 
       // React
-      "react/self-closing-comp": "warn",
-      "react/jsx-curly-brace-presence": [
-        "warn",
-        { props: "never", children: "never" },
+      'react/self-closing-comp': 'warn',
+      'react/jsx-curly-brace-presence': [
+        'warn',
+        { props: 'never', children: 'never' },
       ],
-      "react/jsx-boolean-value": ["warn", "never"],
-      "react/jsx-no-useless-fragment": ["warn", { allowExpressions: true }],
-      "react/hook-use-state": "warn",
+      'react/jsx-boolean-value': ['warn', 'never'],
+      'react/jsx-no-useless-fragment': ['warn', { allowExpressions: true }],
+      'react/hook-use-state': 'warn',
 
       // Import ordering
-      "import/order": [
-        "warn",
+      'import/order': [
+        'warn',
         {
           groups: [
-            "builtin",
-            "external",
-            "internal",
-            ["parent", "sibling"],
-            "index",
-            "type",
+            'builtin',
+            'external',
+            'internal',
+            ['parent', 'sibling'],
+            'index',
+            'type',
           ],
           pathGroups: [
             {
-              pattern: "react",
-              group: "external",
-              position: "before",
+              pattern: 'react',
+              group: 'external',
+              position: 'before',
             },
             {
-              pattern: "next/**",
-              group: "external",
-              position: "before",
+              pattern: 'next/**',
+              group: 'external',
+              position: 'before',
             },
             {
-              pattern: "@/**",
-              group: "internal",
+              pattern: '@/**',
+              group: 'internal',
             },
           ],
-          pathGroupsExcludedImportTypes: ["react", "next"],
-          "newlines-between": "never",
+          pathGroupsExcludedImportTypes: ['react', 'next'],
+          'newlines-between': 'never',
           alphabetize: {
-            order: "asc",
+            order: 'asc',
             caseInsensitive: true,
           },
         },
       ],
-      "import/no-duplicates": ["warn", { "prefer-inline": true }],
+      'import/no-duplicates': ['warn', { 'prefer-inline': true }],
 
       // General
-      "no-console": ["warn", { allow: ["warn", "error"] }],
-      "prefer-const": "warn",
-      "no-var": "error",
-      eqeqeq: ["warn", "always", { null: "ignore" }],
+      'no-console': ['warn', { allow: ['warn', 'error'] }],
+      'prefer-const': 'warn',
+      'no-var': 'error',
+      eqeqeq: ['warn', 'always', { null: 'ignore' }],
     },
   },
-]);
+])
 
-export default eslintConfig;
+export default eslintConfig
