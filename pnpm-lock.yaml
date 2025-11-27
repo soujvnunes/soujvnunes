@@ -24,8 +24,8 @@ importers:
         specifier: 19.2.0
         version: 19.2.0(react@19.2.0)
       themizer:
-        specifier: 1.7.0
-        version: 1.7.0(typescript@5.9.3)
+        specifier: 2.0.1
+        version: 2.0.1(typescript@5.9.3)
     devDependencies:
       '@linaria/stylelint-config-standard-linaria':
         specifier: ^6.3.0
@@ -51,6 +51,9 @@ importers:
       eslint-config-next:
         specifier: 16.0.1
         version: 16.0.1(@typescript-eslint/parser@8.46.3(eslint@9.39.1)(typescript@5.9.3))(eslint@9.39.1)(typescript@5.9.3)
+      eslint-plugin-unused-imports:
+        specifier: ^4.3.0
+        version: 4.3.0(@typescript-eslint/eslint-plugin@8.46.3(@typescript-eslint/parser@8.46.3(eslint@9.39.1)(typescript@5.9.3))(eslint@9.39.1)(typescript@5.9.3))(eslint@9.39.1)
       next-with-linaria:
         specifier: ^1.3.0
         version: 1.3.0(@babel/runtime@7.28.4)(@wyw-in-js/babel-preset@0.8.0(typescript@5.9.3))(@wyw-in-js/transform@0.8.0(typescript@5.9.3))
@@ -1239,6 +1242,15 @@ packages:
     engines: {node: '>=4'}
     peerDependencies:
       eslint: ^3 || ^4 || ^5 || ^6 || ^7 || ^8 || ^9.7
+
+  eslint-plugin-unused-imports@4.3.0:
+    resolution: {integrity: sha512-ZFBmXMGBYfHttdRtOG9nFFpmUvMtbHSjsKrS20vdWdbfiVYsO3yA2SGYy9i9XmZJDfMGBflZGBCm70SEnFQtOA==}
+    peerDependencies:
+      '@typescript-eslint/eslint-plugin': ^8.0.0-0 || ^7.0.0 || ^6.0.0 || ^5.0.0
+      eslint: ^9.0.0 || ^8.0.0
+    peerDependenciesMeta:
+      '@typescript-eslint/eslint-plugin':
+        optional: true
 
   eslint-scope@5.1.1:
     resolution: {integrity: sha512-2NxwbF/hZ0KpepYN0cNbo+FN6XoK7GaHlQhgx/hIZl6Va0bF45RQOOwhLIy8lQDbuCiadSLCBnH2CFYquit5bw==}
@@ -2454,8 +2466,8 @@ packages:
     engines: {node: '>=10'}
     hasBin: true
 
-  themizer@1.7.0:
-    resolution: {integrity: sha512-E7xtqUMOm/Zh2bAhQ7Q/3bMtN+x8xUFgljKRNo8+EFYOavFjk2u/9qIuBnW8Kj18BsoXeYqsHcCg1r0VOhZeww==}
+  themizer@2.0.1:
+    resolution: {integrity: sha512-pf/hbWBDmvc67PWTUweUhJ2G9NFhqessPoZ7JIRwGiXv6swEJ9NkzQnbXcaq9M2PhRvBPFw6U8l0TGp/wS6lbQ==}
     engines: {node: '>= 18.0.0', pnpm: '>= 10.0.0'}
     hasBin: true
     peerDependencies:
@@ -4023,6 +4035,12 @@ snapshots:
       string.prototype.matchall: 4.0.12
       string.prototype.repeat: 1.0.0
 
+  eslint-plugin-unused-imports@4.3.0(@typescript-eslint/eslint-plugin@8.46.3(@typescript-eslint/parser@8.46.3(eslint@9.39.1)(typescript@5.9.3))(eslint@9.39.1)(typescript@5.9.3))(eslint@9.39.1):
+    dependencies:
+      eslint: 9.39.1
+    optionalDependencies:
+      '@typescript-eslint/eslint-plugin': 8.46.3(@typescript-eslint/parser@8.46.3(eslint@9.39.1)(typescript@5.9.3))(eslint@9.39.1)(typescript@5.9.3)
+
   eslint-scope@5.1.1:
     dependencies:
       esrecurse: 4.3.0
@@ -5392,7 +5410,7 @@ snapshots:
       commander: 2.20.3
       source-map-support: 0.5.21
 
-  themizer@1.7.0(typescript@5.9.3):
+  themizer@2.0.1(typescript@5.9.3):
     dependencies:
       chokidar: 4.0.3
       commander: 13.1.0

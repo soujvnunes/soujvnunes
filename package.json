@@ -2,13 +2,14 @@
   "name": "nunez.run",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev --webpack",
     "build": "next build --webpack",
     "start": "next start",
     "lint": "eslint",
     "lint:css": "stylelint \"**/*.{css,linaria.global}.ts\"",
-    "themizer:theme": "themizer theme --out-dir './app'"
+    "themizer:theme:watch": "themizer theme --out-dir './app' --watch"
   },
   "dependencies": {
     "@linaria/core": "^6.3.0",
@@ -16,7 +17,7 @@
     "next": "16.0.1",
     "react": "19.2.0",
     "react-dom": "19.2.0",
-    "themizer": "1.7.0"
+    "themizer": "2.0.1"
   },
   "devDependencies": {
     "@linaria/stylelint-config-standard-linaria": "^6.3.0",
@@ -27,6 +28,7 @@
     "babel-plugin-react-compiler": "1.0.0",
     "eslint": "^9",
     "eslint-config-next": "16.0.1",
+    "eslint-plugin-unused-imports": "^4.3.0",
     "next-with-linaria": "^1.3.0",
     "stylelint": "^15.11.0",
     "stylelint-config-standard": "34",
