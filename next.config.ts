@@ -1,7 +1,7 @@
-import withLinaria from "next-with-linaria";
+import type { NextConfig } from 'next'
 
-const nextConfig = {
+const nextConfig: NextConfig = {
   reactCompiler: true,
-};
+}
 
-export default withLinaria(nextConfig);
+export default nextConfig
