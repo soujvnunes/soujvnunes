@@ -48,7 +48,7 @@ export default function Home() {
             center.
           </Subtitle>
         </div>
-        <div className="flex flex-row w-full max-w-[440px] gap-4">
+        <div className="flex flex-row w-full max-w-110 gap-4">
           <a
             className="flex justify-center items-center h-10 px-4 rounded-full border border-transparent transition-ease cursor-pointer w-fit text-caption uppercase font-bold tracking-wide bg-ground-fore text-ground-back gap-2 hover:bg-main"
             href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
