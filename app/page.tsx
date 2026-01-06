@@ -23,7 +23,9 @@ export default function Home() {
       </div>
       <main className="flex min-h-screen w-full flex-col items-start justify-between py-margin px-padding">
         <div className="text-center">
-          <Headline>Lemme bring your ideas to life on the web!</Headline>
+          <Headline>
+            Lemme design & develop you something extraordinary!
+          </Headline>
           <Subtitle>
             Explore my previous projects and get in touch to discuss how we can
             collaborate.
