@@ -1,9 +1,26 @@
 {
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit"
-  },
+  "editor.codeActionsOnSave": { "source.fixAll.eslint": "explicit" },
   "css.validate": false,
   "scss.validate": false,
   "less.validate": false,
-  "stylelint.validate": ["css"]
+  "stylelint.validate": ["css"],
+  "editor.formatOnSave": true,
+  "prettier.configPath": "./prettier.config.mjs",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "tailwindCSS.experimental.configFile": "app/globals.css",
+  "tailwindCSS.classFunctions": ["tw", "cn", "cva", "twMerge", "tw\\.[a-z-]+"],
+  "editor.quickSuggestions": { "strings": "on" },
+  "files.associations": { "*.css": "tailwindcss" },
+  "[json]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[typescript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[javascript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "tailwindCSS.experimental.classRegex": [
+    ["([\"'`][^\"'`]*.*?[\"'`])", "[\"'`]([^\"'`]*).*?[\"'`]"],
+    ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
+    ["cva\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"],
+    ["twMerge\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
+    ["twMerge\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"],
+    ["cn\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
+    ["cn\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
+  ]
 }
