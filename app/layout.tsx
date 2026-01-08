@@ -10,18 +10,19 @@ export default function RootLayout({ children }: LayoutProps<'/'>) {
   return (
     <html lang="en">
       <head>
-        <link rel="stylesheet" href="https://use.typekit.net/bwb4cjf.css" />
+        <link
+          rel="stylesheet"
+          href="https://use.typekit.net/bwb4cjf.css"
+        />
       </head>
-      <body>
+      <body className="tk-sofia-pro">
         <div
-          className="absolute z-[-1] inset-0 opacity-60 pointer-events-none"
+          className="pointer-events-none absolute inset-0 z-[-1] opacity-60"
           style={{
             backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.5' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E")`,
           }}
         />
-        <div className="relative lg:grid lg:grid-cols-[64px_272px_auto] lg:gap-4">
-          {children}
-        </div>
+        <div className="relative lg:grid lg:grid-cols-[64px_272px_auto] lg:gap-4">{children}</div>
       </body>
     </html>
   )
