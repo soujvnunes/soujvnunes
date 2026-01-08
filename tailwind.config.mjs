@@ -1,11 +1,8 @@
-import type { Config } from 'tailwindcss'
-import { theme } from './themizer.config'
+const { theme } = require('./themizer.config.ts')
 
-export default {
-  content: [
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
-    './ui/**/*.{js,ts,jsx,tsx,mdx}',
-  ],
+/** @type {import('tailwindcss').Config} */
+const config = {
+  content: ['./app/**/*.{js,ts,jsx,tsx,mdx}', './ui/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
     extend: {
       colors: {
@@ -36,4 +33,6 @@ export default {
       opacity: theme.tokens.alphas,
     },
   },
-} satisfies Config
+}
+
+export default config
