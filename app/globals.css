@@ -2,7 +2,7 @@
 @import './theme.css';
 @import 'tw-animate-css';
 
-@config '../tailwind.config.ts';
+@config '../tailwind.config.mjs';
 
 @layer base {
   html,
@@ -12,6 +12,6 @@
   }
 
   body {
-    @apply bg-ground-back text-ground-fore font-sans text-body antialiased;
+    @apply bg-ground-back text-body text-ground-fore antialiased;
   }
 }
