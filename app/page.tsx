@@ -21,14 +21,11 @@ export default function Home() {
           </li>
         </ul>
       </div>
-      <main className="flex min-h-screen w-full flex-col items-start justify-between py-margin px-padding">
+      <main className="flex min-h-screen w-full flex-col items-start justify-between px-padding py-margin">
         <div className="text-center">
-          <Headline>
-            Lemme design & develop you something extraordinary!
-          </Headline>
+          <Headline>Lemme design & develop you something extraordinary!</Headline>
           <Subtitle>
-            Explore my previous projects and get in touch to discuss how we can
-            collaborate.
+            Explore my previous projects and get in touch to discuss how we can collaborate.
           </Subtitle>
           <Subtitle>
             Looking for a starting point or more instructions? Head over to{' '}
@@ -50,9 +47,9 @@ export default function Home() {
             center.
           </Subtitle>
         </div>
-        <div className="flex flex-row w-full max-w-110 gap-4">
+        <div className="flex w-full max-w-110 flex-row gap-4">
           <a
-            className="flex justify-center items-center h-10 px-4 rounded-full border border-transparent transition-ease cursor-pointer w-fit text-caption uppercase font-bold tracking-wide bg-ground-fore text-ground-back gap-2 hover:bg-main"
+            className="transition-ease flex h-10 w-fit cursor-pointer items-center justify-center gap-2 rounded-full border border-transparent bg-ground-fore px-4 text-caption font-bold tracking-wide text-ground-back uppercase hover:bg-main"
             href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
             target="_blank"
             rel="noopener noreferrer">
@@ -65,7 +62,7 @@ export default function Home() {
             Deploy Now
           </a>
           <a
-            className="flex justify-center items-center h-10 px-4 rounded-full border border-transparent transition-ease cursor-pointer w-fit text-caption uppercase font-bold tracking-wide hover:opacity-80"
+            className="transition-ease flex h-10 w-fit cursor-pointer items-center justify-center rounded-full border border-transparent px-4 text-caption font-bold tracking-wide uppercase hover:opacity-80"
             href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
             target="_blank"
             rel="noopener noreferrer">
