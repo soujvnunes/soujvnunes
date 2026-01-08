@@ -10,7 +10,7 @@ export function Headline({
 
   return (
     <Comp
-      className={cn('text-headline text-main text-balance', className)}
+      className={cn('text-headline text-balance text-main', className)}
       {...props}
     />
   )
