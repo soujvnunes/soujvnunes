@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "ES2017",
+    "target": "esnext",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -13,8 +13,14 @@
     "isolatedModules": true,
     "jsx": "react-jsx",
     "incremental": true,
-    "plugins": [{ "name": "next" }],
-    "paths": { "@/*": ["./*"] }
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./*"]
+    }
   },
   "include": [
     "next-env.d.ts",
@@ -26,7 +32,9 @@
     "tailwind.config.mjs",
     "themizer.config.mjs",
     "next.config.mjs",
-    "prettier.config.mjs"
+    "eslint.config.mjs",
+    "postcss.config.mjs",
+    "css.d.ts"
   ],
   "exclude": ["node_modules"]
 }
