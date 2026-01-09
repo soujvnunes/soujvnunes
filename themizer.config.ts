@@ -29,9 +29,6 @@ export const theme = themizer(
         bounce: '200ms cubic-bezier(0.5, -0.5, 0.25, 1.5)',
         ease: '200ms cubic-bezier(0.25, 0.1, 0.25, 1)',
       },
-      typeface: {
-        sans: "'sofia-pro, sans-serif'",
-      },
     },
   },
   ({ palette, alphas, units, transitions }) => ({
