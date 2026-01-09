@@ -8,10 +8,10 @@ const config = {
   trailingComma: 'all',
   enableDebugLogs: true,
   printWidth: 104,
-  objectWrap: 'collapse',
-  tailwindStylesheet: 'app/globals.css',
+  tailwindStylesheet: './app/globals.css',
   plugins: ['prettier-plugin-tailwindcss'],
   tailwindFunctions: ['cva', 'twMerge', 'cn'],
+  bracketSpacing: true,
 }
 
 export default config
