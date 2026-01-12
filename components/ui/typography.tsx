@@ -1,26 +1,26 @@
-import { Slot } from '@radix-ui/react-slot'
 import { cn } from '@/lib/utils'
+import { Slot } from '@radix-ui/react-slot'
 
-export function Headline({
+export const Headline = ({
   className,
   asChild,
   ...props
-}: React.ComponentProps<'h1'> & { asChild?: boolean }) {
+}: React.ComponentProps<'h1'> & { asChild?: boolean }) => {
   const Comp = asChild ? Slot : 'h1'
 
   return (
     <Comp
-      className={cn('text-headline text-balance text-main', className)}
+      className={cn('text-headline font-bold text-balance text-main', className)}
       {...props}
     />
   )
 }
 
-export function Subtitle({
+export const Subtitle = ({
   className,
   asChild,
   ...props
-}: React.ComponentProps<'p'> & { asChild?: boolean }) {
+}: React.ComponentProps<'p'> & { asChild?: boolean }) => {
   const Comp = asChild ? Slot : 'p'
 
   return (
