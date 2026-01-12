@@ -23,9 +23,6 @@ const config = {
         padding: theme.aliases.grid.padding,
         margin: theme.aliases.grid.margin,
       },
-      fontFamily: {
-        sans: theme.tokens.typeface.sans,
-      },
       transitionTimingFunction: {
         bounce: theme.aliases.animations.bounce,
         ease: theme.aliases.animations.ease,
