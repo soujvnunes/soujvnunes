@@ -1,20 +1,4 @@
-module.exports = {
-  // ref: https://github.com/vercel/next.js/discussions/52690?sort=new#discussioncomment-8235460
-  webpack: (config) => {
-    config.module.rules.push({
-      test: /\.svg$/,
-      use: ["@svgr/webpack", "url-loader"],
-    });
+/** @type {import('next').NextConfig} */
+const nextConfig = { reactStrictMode: true }
 
-    return config;
-  },
-  images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "drive.google.com",
-        port: "",
-      },
-    ],
-  },
-};
+export default nextConfig
