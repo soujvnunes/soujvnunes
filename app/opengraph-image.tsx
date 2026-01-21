@@ -37,7 +37,7 @@ export default async function opengraphImage() {
             }}>
             v
           </span>
-          nunes.github.io
+          nunes.vercel.app
         </span>
         <svg
           xmlns="http://www.w3.org/2000/svg"
