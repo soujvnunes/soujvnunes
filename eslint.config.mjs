@@ -16,7 +16,7 @@ import { fileURLToPath } from 'url'
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename)
 
-const config = [
+export default [
   {
     ignores: [
       'node_modules/**',
@@ -248,12 +248,10 @@ const config = [
   {
     files: [
       // Next.js file conventions
-      '**/{default,page,layout,error,loading,forbidden,not-found,template,unauthorized,icon,apple-icon,manifest,opengraph-image,twitter-image,global-error,middleware}.{ts,tsx}',
+      '**/{default,page,layout,error,loading,forbidden,not-found,template,unauthorized,icon,apple-icon,manifest,opengraph-image,twitter-image,global-error,middleware,sitemap,robots}.{ts,tsx}',
       // Root config files
       '*.{mjs,js,ts}',
     ],
     rules: { 'import-x/no-default-export': 'off', 'no-restricted-syntax': 'off' },
   },
 ]
-
-export default config
