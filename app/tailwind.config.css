@@ -4,6 +4,8 @@
 
 @config '../tailwind.config.mjs';
 
-@theme {
-  --default-font-family: var(--font-nunito);
+@theme default {
+  --*: initial;
+
+  --default-font-family: var(--font-sofia-pro);
 }
