@@ -14,7 +14,7 @@
     "typecheck": "tsc --noEmit",
     "fix-all": "pnpm run format && pnpm run lint:fix",
     "install:clean": "rm -rf node_modules pnpm-lock.yaml .next .turbo out && pnpm store prune && pnpm install",
-    "themizer:theme": "themizer theme --out-dir './app'"
+    "themizer:theme:watch": "themizer theme --out-dir './app' --watch"
   },
   "keywords": [],
   "author": "",
