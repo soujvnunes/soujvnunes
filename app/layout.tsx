@@ -14,17 +14,17 @@ export const viewport: Viewport = {
   themeColor: `${resolveAtom(theme.aliases.colors.ground.back)}`,
 }
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL ?? ''), // TODO: remove ?? ''
-  description: process.env.NEXT_PUBLIC_META_DESCRIPTION,
+  metadataBase: new URL(process.env.BASE_URL ?? ''), // TODO: remove ?? ''
+  description: process.env.META_DESCRIPTION,
   title: {
-    default: process.env.NEXT_PUBLIC_META_TITLE ?? '', // TODO: remove ?? ''
-    template: `%s | ${process.env.NEXT_PUBLIC_META_TITLE}`,
+    default: process.env.META_TITLE ?? '', // TODO: remove ?? ''
+    template: `%s | ${process.env.META_TITLE}`,
   },
   openGraph: {
-    title: process.env.NEXT_PUBLIC_META_OG_TITLE,
-    description: process.env.NEXT_PUBLIC_META_OG_DESCRIPTION,
-    url: process.env.NEXT_PUBLIC_BASE_URL,
-    siteName: process.env.NEXT_PUBLIC_META_TITLE,
+    title: process.env.META_OG_TITLE,
+    description: process.env.META_OG_DESCRIPTION,
+    url: process.env.BASE_URL,
+    siteName: process.env.META_TITLE,
     locale: 'en_US',
     type: 'website',
   },

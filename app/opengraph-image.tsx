@@ -4,7 +4,7 @@ import { readFile } from 'node:fs/promises'
 import { join } from 'node:path'
 
 export const contentType = 'image/png'
-export const alt = process.env.NEXT_PUBLIC_META_DESCRIPTION
+export const alt = process.env.META_DESCRIPTION
 export const size = {
   width: 1200,
   height: 630,

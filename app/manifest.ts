@@ -4,9 +4,9 @@ export default function manifest() {
     display: 'standalone',
     theme_color: '#100A01',
     background_color: '#100A01',
-    name: process.env.NEXT_PUBLIC_META_TITLE,
-    short_name: process.env.NEXT_PUBLIC_META_OG_TITLE,
-    description: process.env.NEXT_PUBLIC_META_DESCRIPTION,
+    name: process.env.META_TITLE,
+    short_name: process.env.META_OG_TITLE,
+    description: process.env.META_DESCRIPTION,
     icons: [
       { src: '/favicon.ico', sizes: 'any', type: 'image/x-icon' },
       { src: '/android-chrome-192x192.png', sizes: '192x192', type: 'image/png' },

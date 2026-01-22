@@ -1,7 +1,7 @@
 export default function sitemap() {
   return [
     {
-      url: `${process.env.NEXT_PUBLIC_BASE_URL}/`,
+      url: `${process.env.BASE_URL}/`,
       lastModified: new Date().toISOString().split('T')[0],
     },
   ]
