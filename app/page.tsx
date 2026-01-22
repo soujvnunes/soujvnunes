@@ -1,9 +1,9 @@
-import Business from "components/Business";
+import { HeroBackground } from '@/shared/components/background'
 
 export default function Contributions() {
   return (
-    <div className="m-auto">
-      <Business />
-    </div>
-  );
+    <main className="m-auto">
+      <HeroBackground />
+    </main>
+  )
 }
