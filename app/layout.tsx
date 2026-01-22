@@ -8,8 +8,6 @@ import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import { resolveAtom } from 'themizer'
 
-import { HeroBackground } from '@/shared/components/background'
-
 export const viewport: Viewport = {
   themeColor: `${resolveAtom(theme.aliases.colors.ground.back)}`,
 }
@@ -69,10 +67,7 @@ export default function RootLayout({ children }: React.PropsWithChildren) {
       lang="en"
       className={sofiaPro.variable}>
       <body className="bg-ground-back text-ground-fore antialiased">
-        <div className="isolate min-h-dvh">
-          {children}
-          <HeroBackground />
-        </div>
+        <div className="isolate min-h-dvh">{children}</div>
         <Analytics debug />
         <SpeedInsights debug />
       </body>
