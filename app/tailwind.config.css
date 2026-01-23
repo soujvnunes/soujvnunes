@@ -5,7 +5,7 @@
 @config '../tailwind.config.mjs';
 
 @theme default {
-  --default-font-family: var(--font-sofia-pro);
+  --default-font-family: var(--font-google-sans);
 }
 
 @utility mask-radial-fade {
