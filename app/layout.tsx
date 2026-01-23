@@ -1,28 +1,30 @@
 import './tailwind.config.css'
 
 import type { Metadata, Viewport } from 'next'
-import localFont from 'next/font/local'
+import { Google_Sans } from 'next/font/google'
 
 import { theme } from '@/themizer.config'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import { resolveAtom } from 'themizer'
 
+const META_TITLE = process.env.META_TITLE ?? 'soujvnunes'
+
 export const viewport: Viewport = {
   themeColor: `${resolveAtom(theme.aliases.colors.ground.back)}`,
 }
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.BASE_URL ?? ''), // TODO: remove ?? ''
+  metadataBase: process.env.BASE_URL ? new URL(process.env.BASE_URL) : null,
   description: process.env.META_DESCRIPTION,
   title: {
-    default: process.env.META_TITLE ?? '', // TODO: remove ?? ''
-    template: `%s | ${process.env.META_TITLE}`,
+    default: META_TITLE,
+    template: `%s | ${META_TITLE}`,
   },
   openGraph: {
     title: process.env.META_OG_TITLE,
     description: process.env.META_OG_DESCRIPTION,
     url: process.env.BASE_URL,
-    siteName: process.env.META_TITLE,
+    siteName: META_TITLE,
     locale: 'en_US',
     type: 'website',
   },
@@ -39,33 +41,17 @@ export const metadata: Metadata = {
   },
 }
 
-const sofiaPro = localFont({
-  variable: '--font-sofia-pro',
-  src: [
-    { path: './sofia-pro/SofiaPro-UltraLight.otf', weight: '100', style: 'normal' },
-    { path: './sofia-pro/SofiaPro-UltraLightItalic.otf', weight: '100', style: 'italic' },
-    { path: './sofia-pro/SofiaPro-ExtraLight.otf', weight: '200', style: 'normal' },
-    { path: './sofia-pro/SofiaPro-ExtraLightItalic.otf', weight: '200', style: 'italic' },
-    { path: './sofia-pro/SofiaPro-Light.otf', weight: '300', style: 'normal' },
-    { path: './sofia-pro/SofiaPro-LightItalic.otf', weight: '300', style: 'italic' },
-    { path: './sofia-pro/SofiaPro-Regular.otf', weight: '400', style: 'normal' },
-    { path: './sofia-pro/SofiaPro-RegularItalic.otf', weight: '400', style: 'italic' },
-    { path: './sofia-pro/SofiaPro-Medium.otf', weight: '500', style: 'normal' },
-    { path: './sofia-pro/SofiaPro-MediumItalic.otf', weight: '500', style: 'italic' },
-    { path: './sofia-pro/SofiaPro-SemiBold.otf', weight: '600', style: 'normal' },
-    { path: './sofia-pro/SofiaPro-SemiBoldItalic.otf', weight: '600', style: 'italic' },
-    { path: './sofia-pro/SofiaPro-Bold.otf', weight: '700', style: 'normal' },
-    { path: './sofia-pro/SofiaPro-BoldItalic.otf', weight: '700', style: 'italic' },
-    { path: './sofia-pro/SofiaPro-Black.otf', weight: '900', style: 'normal' },
-    { path: './sofia-pro/SofiaPro-BlackItalic.otf', weight: '900', style: 'italic' },
-  ],
+const googleSans = Google_Sans({
+  variable: '--font-google-sans',
+  subsets: ['latin'],
+  display: 'swap',
 })
 
 export default function RootLayout({ children }: React.PropsWithChildren) {
   return (
     <html
       lang="en"
-      className={sofiaPro.variable}>
+      className={googleSans.variable}>
       <body className="bg-ground-back text-ground-fore antialiased">
         <div className="isolate min-h-dvh">{children}</div>
         <Analytics debug />
