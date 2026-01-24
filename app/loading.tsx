@@ -1,3 +1,3 @@
 export default function loading() {
-  return "hey im loading";
+  return <p>hey im loading</p>
 }
