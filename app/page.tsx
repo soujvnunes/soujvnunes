@@ -1,8 +1,10 @@
 import { HeroBackground } from '@/shared/components/background'
+import { Card } from '@/shared/components/card'
 
 export default function Contributions() {
   return (
-    <main className="m-auto">
+    <main className="flex min-h-dvh">
+      <Card className="m-auto">Victor Nunes</Card>
       <HeroBackground />
     </main>
   )
