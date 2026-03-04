@@ -53,6 +53,8 @@ export const theme = themizer(
   },
   ({ colors, alphas, sizing, transitions }) => ({
     colors: {
+      base: [{ dark: colors.amber[950] }, colors.amber[50]],
+      neutral: [{ dark: colors.amber[50] }, alpha(colors.amber[950], alphas[80])],
       main: {
         DEFAULT: colors.amber[500],
         secondary: [{ dark: colors.amber[400] }, colors.amber[600]],
@@ -60,10 +62,6 @@ export const theme = themizer(
       accent: {
         DEFAULT: colors.indigo[500],
         secondary: [{ dark: colors.indigo[400] }, colors.indigo[600]],
-      },
-      ground: {
-        back: [{ dark: colors.amber[950] }, colors.amber[50]],
-        fore: [{ dark: colors.amber[50] }, alpha(colors.amber[950], alphas[80])],
       },
     },
 
