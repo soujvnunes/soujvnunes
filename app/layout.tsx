@@ -4,14 +4,14 @@ import type { Metadata, Viewport } from 'next'
 import { Google_Sans } from 'next/font/google'
 
 import { theme } from '@/themizer.config'
-import { Analytics } from '@vercel/analytics/react'
+import { Analytics } from '@vercel/analytics/next'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import { resolveAtom } from 'themizer'
 
 const META_TITLE = process.env.META_TITLE ?? 'soujvnunes'
 
 export const viewport: Viewport = {
-  themeColor: `${resolveAtom(theme.aliases.colors.ground.back)}`,
+  themeColor: `${resolveAtom(theme.aliases.colors.base)}`,
 }
 export const metadata: Metadata = {
   metadataBase: process.env.BASE_URL ? new URL(process.env.BASE_URL) : null,
@@ -52,7 +52,7 @@ export default function RootLayout({ children }: React.PropsWithChildren) {
     <html
       lang="en"
       className={googleSans.variable}>
-      <body className="bg-ground-back text-ground-fore antialiased">
+      <body className="bg-base text-neutral antialiased">
         <div className="isolate min-h-dvh">{children}</div>
         <Analytics debug />
         <SpeedInsights debug />
