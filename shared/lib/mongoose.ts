@@ -50,3 +50,15 @@ export const connectMongo = async () => {
 
   return cached.conn
 }
+
+export const getMongoClient = async () => {
+  const conn = await connectMongo()
+
+  return conn.getClient()
+}
+
+export const getMongoDB = async () => {
+  const client = await getMongoClient()
+
+  return client.db()
+}
