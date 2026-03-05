@@ -15,15 +15,17 @@ let cached = global.mongoose
 
 if (!cached) cached = global.mongoose = defaultMongoose
 
-export const connectMongoose = async () => {
-  const MONGOOSE_URI = process.env.MONGOOSE_URI
+export const connectMongo = async () => {
+  const MONGODB_URI = process.env.MONGODB_URI
 
-  if (!MONGOOSE_URI) throw Error('Missing environment variable')
+  if (!MONGODB_URI) throw Error('Missing database environment variable')
 
   if (cached.conn) return cached.conn
 
-  cached.promise ??= connect(MONGOOSE_URI, {
+  cached.promise ??= connect(MONGODB_URI, {
     bufferCommands: false,
+    maxPoolSize: 10, // Limit connections per lambda to prevent exhaustion
+    serverSelectionTimeoutMS: 5000, // Fail fast if DB is down
     serverApi: {
       version: '1',
       strict: true,
@@ -36,9 +38,8 @@ export const connectMongoose = async () => {
 
     cached.conn = mongoose.connection
 
-    // Attach the MongoDB client to Vercel's Fluid Compute for proper connection management
     if (!cached.poolAttached && mongoose.connection.getClient()) {
-      attachDatabasePool(mongoose.connection.getClient())
+      attachDatabasePool(mongoose.connection.getClient()) // Attach the MongoDB client to Vercel's Fluid Compute for proper connection management
       cached.poolAttached = true
     }
   } catch (error) {
