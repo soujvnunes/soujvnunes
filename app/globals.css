@@ -4,6 +4,18 @@
 
 @config '../tailwind.config.mjs';
 
-@theme {
-  --default-font-family: var(--font-nunito);
+@theme default {
+  --default-font-family: var(--font-google-sans);
+}
+
+@utility mask-radial-fade {
+  --mask-from: white;
+  --mask-from-position: 30%;
+  --mask-to: transparent;
+  --mask-to-position: 70%;
+  mask-image: radial-gradient(
+    circle at center,
+    var(--mask-from) var(--mask-from-position),
+    var(--mask-to) var(--mask-to-position)
+  );
 }
