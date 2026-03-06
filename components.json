@@ -7,14 +7,16 @@
     "config": "",
     "css": "./app/tailwind.config.css",
     "baseColor": "slate",
-    "cssVariables": true,
+    "cssVariables": false,
     "prefix": ""
   },
   "iconLibrary": "lucide",
   "aliases": {
     "components": "@/shared/components",
     "utils": "@/shared/utils/shadcn",
-    "ui": "@/shared/components"
+    "ui": "@/shared/components",
+    "lib": "@/shared/lib",
+    "hooks": "@/shared/lib"
   },
   "registries": {}
 }
