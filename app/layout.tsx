@@ -45,6 +45,15 @@ const googleSans = Google_Sans({
   variable: '--font-google-sans',
   subsets: ['latin'],
   display: 'swap',
+  fallback: [
+    'ui-sans-serif',
+    'system-ui',
+    'sans-serif',
+    'Apple Color Emoji',
+    'Segoe UI Emoji',
+    'Segoe UI Symbol',
+    'Noto Color Emoji',
+  ],
 })
 
 export default function RootLayout({ children }: React.PropsWithChildren) {
