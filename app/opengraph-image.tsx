@@ -11,7 +11,7 @@ export const size = {
 }
 
 export default async function opengraphImage() {
-  const sofiaProBold = await readFile(join(process.cwd(), 'app/sofia-pro/SofiaPro-Bold.otf'))
+  const googleSansBold = await readFile(join(process.cwd(), 'app/googlesans-bold.otf'))
 
   return new ImageResponse(
     <div
@@ -22,22 +22,22 @@ export default async function opengraphImage() {
       <h1 tw="text-[4rem] -mr-1 relative my-0">
         <div tw="bottom-1 right-0 left-0 bg-[#d97706] absolute h-1 rounded-sm -z-1 mr-8" />
         <span tw="z-1">
-          <span tw="text-[#FFFBF4]/40 -mr-4">https://</span>
-          sou
+          <span tw="text-[#FFFBF4]/40">https://</span>
+          souj
           <span
             style={{
               letterSpacing: '-.2em',
               color: '#6366F1',
             }}>
-            j
+            v
           </span>
           <span
             style={{
               color: '#F59E0B',
             }}>
-            v
+            n
           </span>
-          nunes.vercel.app
+          un.es
         </span>
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -58,14 +58,14 @@ export default async function opengraphImage() {
           <path d="M9.037 9.69a.498.498 0 0 1 .653-.653l11 4.5a.5.5 0 0 1-.074.949l-4.349 1.041a1 1 0 0 0-.74.739l-1.04 4.35a.5.5 0 0 1-.95.074z" />
         </svg>
       </h1>
-      <p tw="text-[2.5rem] text-[#FFFBF4]/60">Victor Nunes • Frontend Engineer</p>
+      <p tw="text-[2.5rem] text-[#FFFBF4]/60">Victor Nunes • Senior Frontend Engineer</p>
     </div>,
     {
       ...size,
       fonts: [
         {
           name: 'Sofia Pro',
-          data: sofiaProBold,
+          data: googleSansBold,
           style: 'normal',
           weight: 700,
         },
