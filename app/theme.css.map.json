@@ -35,8 +35,8 @@
   "--themec3": "--theme-aliases-fontSize-subtitle",
   "--themec4": "--theme-aliases-fontSize-body",
   "--themec5": "--theme-aliases-fontSize-caption",
-  "--themec6": "--theme-aliases-spacing-padding",
-  "--themec7": "--theme-aliases-spacing-margin",
+  "--themec6": "--theme-aliases-spacing-sm",
+  "--themec7": "--theme-aliases-spacing-md",
   "--themec8": "--theme-aliases-transitionTimingFunction-bounce",
   "--themec9": "--theme-aliases-transitionTimingFunction-ease"
 }
