@@ -17,7 +17,7 @@ export default async function RootOpengraphImage() {
     <div
       tw="flex flex-col justify-center p-10 w-full h-full text-[#FFFBF4] items-end"
       style={{
-        backgroundImage: 'linear-gradient(to bottom, #1F1402, #100A01)',
+        backgroundImage: 'linear-gradient(to bottom right, #100A01, #1F1402)',
       }}>
       <h1 tw="text-[4rem] -mr-1 relative my-0">
         <div tw="bottom-1 right-0 left-0 bg-[#d97706] absolute h-1 rounded-sm -z-1 mr-8" />
