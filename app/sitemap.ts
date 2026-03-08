@@ -1,4 +1,4 @@
-export default function sitemap() {
+export default function RootSitemap() {
   return [
     {
       url: `${process.env.BASE_URL}/`,

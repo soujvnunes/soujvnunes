@@ -10,7 +10,7 @@ export const size = {
   height: 630,
 }
 
-export default async function opengraphImage() {
+export default async function RootOpengraphImage() {
   const googleSansBold = await readFile(join(process.cwd(), 'app/googlesans-bold.otf'))
 
   return new ImageResponse(

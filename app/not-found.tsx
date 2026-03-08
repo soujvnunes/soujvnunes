@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-export default function notFound() {
+export default function RootNotFound() {
   return (
     <section className="my-10 text-center">
       <p className="text-caption font-semibold tracking-tighter uppercase">404</p>
