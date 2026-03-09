@@ -45,7 +45,13 @@ export const theme = themizer(
   ({ colors, alphas, sizing, transitions }) => ({
     colors: {
       base: [{ dark: colors.amber[1050] }, colors.amber[5]],
-      neutral: [{ dark: colors.amber[5] }, alpha(colors.amber[1050], alphas[80])],
+      neutral: {
+        DEFAULT: [{ dark: colors.amber[5] }, alpha(colors.amber[1050], alphas[80])],
+        secondary: [
+          { dark: alpha(colors.amber[5], alphas[60]) },
+          alpha(colors.amber[1050], alphas[60]),
+        ],
+      },
       main: {
         DEFAULT: 'var(--color-amber-500)',
         secondary: [{ dark: 'var(--color-amber-400)' }, 'var(--color-amber-600)'],
@@ -55,8 +61,8 @@ export const theme = themizer(
         secondary: [{ dark: 'var(--color-indigo-400)' }, 'var(--color-indigo-600)'],
       },
       surface: {
-        DEFAULT: ''
-      }
+        DEFAULT: '',
+      },
     },
 
     fontSize: {
@@ -68,8 +74,10 @@ export const theme = themizer(
     },
 
     spacing: {
-      sm: [{ desktop: sizing[16] }, sizing[8]],
-      md: [{ desktop: sizing[24] }, sizing[16]],
+      grid: {
+        padding: [{ desktop: sizing[16] }, sizing[8]],
+        margin: [{ desktop: sizing[24] }, sizing[16]],
+      },
     },
 
     transitionTimingFunction: {
