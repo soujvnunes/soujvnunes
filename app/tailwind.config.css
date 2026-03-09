@@ -9,13 +9,9 @@
 }
 
 @utility mask-radial-fade {
-  --mask-from: white;
-  --mask-from-position: 30%;
-  --mask-to: transparent;
-  --mask-to-position: 70%;
   mask-image: radial-gradient(
-    circle at center,
-    var(--mask-from) var(--mask-from-position),
-    var(--mask-to) var(--mask-to-position)
+    var(--mask-shape, circle) at var(--mask-position, center),
+    var(--mask-from, white) var(--mask-from-position, 0%),
+    var(--mask-to, transparent) var(--mask-to-position, 100%)
   );
 }
