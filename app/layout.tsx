@@ -2,6 +2,7 @@ import './tailwind.config.css'
 
 import type { Metadata, Viewport } from 'next'
 import { Google_Sans } from 'next/font/google'
+import Script from 'next/script'
 
 import { theme } from '@/themizer.config'
 import { Analytics } from '@vercel/analytics/next'
@@ -85,6 +86,24 @@ export default function RootLayout({ children }: React.PropsWithChildren) {
         <div className="isolate min-h-dvh">{children}</div>
         <Analytics debug />
         <SpeedInsights debug />
+        <Script
+          id="json-ld"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'Person',
+              name: 'Victor Nunes',
+              url: process.env.BASE_URL,
+              jobTitle: 'Senior Frontend Engineer',
+              sameAs: [
+                'https://github.com/soujvnunes',
+                'https://linkedin.com/in/soujvnunes',
+                'https://twitter.com/soujvnunes',
+              ],
+            }),
+          }}
+        />
       </body>
     </html>
   )
