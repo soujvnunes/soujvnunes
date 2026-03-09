@@ -25,7 +25,7 @@ export default async function RootOpengraphImage() {
           <span tw="text-[#FFFBF4]/40">https://</span>
           sou
           <span
-            tw="text-[#6366F1] tracking-[-0.2em]"
+            tw="text-[#6366F1]"
             style={{
               letterSpacing: '-.2em',
             }}>
