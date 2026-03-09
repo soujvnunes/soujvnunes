@@ -14,7 +14,8 @@
     "typecheck": "tsc --noEmit",
     "fix-all": "pnpm run format && pnpm run lint:fix",
     "install:clean": "rm -rf node_modules pnpm-lock.yaml .next .turbo out && pnpm store prune && pnpm install",
-    "themizer:theme:watch": "themizer theme --out-dir './app' --watch"
+    "themizer:theme:watch": "themizer theme --out-dir './app' --watch",
+    "vercel:pull": "vercel env pull"
   },
   "keywords": [],
   "author": "",
