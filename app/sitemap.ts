@@ -1,8 +1,12 @@
-export default function RootSitemap() {
+import type { MetadataRoute } from 'next'
+
+export default function RootSitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: `${process.env.BASE_URL}/`,
-      lastModified: new Date().toISOString().split('T')[0],
+      priority: 1,
+      changeFrequency: 'monthly',
+      url: `${process.env.BASE_URL}`,
+      lastModified: new Date(),
     },
   ]
 }
