@@ -5,7 +5,7 @@
   "css.validate": false,
   "stylelint.validate": ["css"],
   "prettier.configPath": "./prettier.config.mjs",
-  "tailwindCSS.experimental.configFile": "./app/globals.css",
+  "tailwindCSS.experimental.configFile": "./app/tailwind.config.css",
   "tailwindCSS.classFunctions": ["tw", "cn", "cva", "twMerge", "tw\\.[a-z-]+"],
   "editor.quickSuggestions": { "strings": "on" },
   "files.associations": { "*.css": "tailwindcss" },
