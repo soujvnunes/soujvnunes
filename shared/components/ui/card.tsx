@@ -1,4 +1,4 @@
-import { cn } from '../utils/shadcn'
+import { cn } from '../../utils/shadcn'
 
 export const Card = ({ className, ...props }: React.ComponentProps<'div'>) => (
   <div
