@@ -20,6 +20,20 @@ export const metadata: Metadata = {
     default: META_TITLE,
     template: `%s | ${META_TITLE}`,
   },
+  keywords: [
+    'Victor Nunes',
+    'soujvnunes',
+    'Frontend Engineer',
+    'Senior Frontend Developer',
+    'React Developer',
+    'Next.js',
+    'TypeScript',
+    'Web Development',
+    'Portfolio',
+    'JavaScript',
+  ],
+  authors: [{ name: 'Victor Nunes', url: process.env.BASE_URL }],
+  creator: 'Victor Nunes',
   openGraph: {
     title: process.env.META_OG_TITLE,
     description: process.env.META_OG_DESCRIPTION,
@@ -27,6 +41,12 @@ export const metadata: Metadata = {
     siteName: META_TITLE,
     locale: 'en_US',
     type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: process.env.META_OG_TITLE,
+    description: process.env.META_OG_DESCRIPTION,
+    creator: '@soujvnunes',
   },
   robots: {
     index: true,
