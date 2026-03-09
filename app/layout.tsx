@@ -9,7 +9,7 @@ import { Analytics } from '@vercel/analytics/next'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import { resolveAtom } from 'themizer'
 
-const META_TITLE = process.env.META_TITLE ?? 'soujvnunes'
+const META_TITLE = process.env.META_TITLE ?? 'Victor Nunes - Senior Frontend Engineer'
 
 export const viewport: Viewport = {
   themeColor: `${resolveAtom(theme.aliases.colors.base)}`,
