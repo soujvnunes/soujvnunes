@@ -14,22 +14,14 @@ export default async function RootAppleIcon() {
 
   return new ImageResponse(
     <div
-      tw="flex items-center justify-center w-full h-full text-[#FFFBF4] text-[8.5rem] rounded-[44px]"
+      tw="flex items-center justify-center w-full h-full"
       style={{
+        fontSize: `${Math.round(size.height * 0.75)}px`,
+        borderRadius: `${Math.round(size.height / 8)}px`,
         backgroundImage: 'linear-gradient(to bottom right, #100A01, #1F1402)',
       }}>
-      <span
-        style={{
-          letterSpacing: '-.2em',
-          color: '#6366F1',
-        }}>
-        j
-      </span>
-      <span
-        style={{
-          color: '#F59E0B',
-        }}>
-        v
+      <span tw="relative text-[#F59E0B]">
+        <span tw="absolute text-[#6366F1] -left-[10%]">j</span>v
       </span>
     </div>,
     {
