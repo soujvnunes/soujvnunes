@@ -2,10 +2,14 @@ import Image from 'next/image'
 
 import memojiFallback from '@/shared/assets/memoji-fallback.svg'
 
+import { cn } from '../utils/shadcn'
+
 import { MemojiVideo } from './ui/MemojiVideo'
 
-export const Memoji = () => (
-  <span className="inline-flex h-32 w-32 items-center justify-center overflow-hidden">
+export const Memoji = ({ className, ...props }: React.ComponentProps<'div'>) => (
+  <div
+    className={cn('inline-flex h-32 w-32 items-center justify-center overflow-hidden', className)}
+    {...props}>
     <MemojiVideo
       src="/memoji.mov"
       fallback={
@@ -16,5 +20,5 @@ export const Memoji = () => (
         />
       }
     />
-  </span>
+  </div>
 )
