@@ -3,6 +3,12 @@ import { theme } from './themizer.config.ts'
 /** @type {import('tailwindcss').Config} */
 export default {
   theme: {
-    extend: theme.aliases,
+    extend: {
+      ...theme.aliases,
+      colors: {
+        ...theme.aliases.colors,
+        ...theme.tokens.colors,
+      },
+    },
   },
 }
