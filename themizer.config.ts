@@ -14,18 +14,9 @@ export const theme = themizer(
     tokens: {
       colors: {
         amber: {
-          50: '#fffbf4',
-          400: '#fbbf24',
-          500: '#f59e0b',
-          600: '#d97706',
-          900: '#1f1402',
-          950: '#100a01',
-        },
-        indigo: {
-          400: '#818cf8',
-          500: '#6366f1',
-          600: '#5751FC',
-          700: '#4f46e5',
+          5: '#fffbf4',
+          1000: '#1f1402',
+          1050: '#100a01',
         },
       },
       sizing: {
@@ -53,16 +44,19 @@ export const theme = themizer(
   },
   ({ colors, alphas, sizing, transitions }) => ({
     colors: {
-      base: [{ dark: colors.amber[950] }, colors.amber[50]],
-      neutral: [{ dark: colors.amber[50] }, alpha(colors.amber[950], alphas[80])],
+      base: [{ dark: colors.amber[1050] }, colors.amber[5]],
+      neutral: [{ dark: colors.amber[5] }, alpha(colors.amber[1050], alphas[80])],
       main: {
-        DEFAULT: colors.amber[500],
-        secondary: [{ dark: colors.amber[400] }, colors.amber[600]],
+        DEFAULT: 'var(--color-amber-500)',
+        secondary: [{ dark: 'var(--color-amber-400)' }, 'var(--color-amber-600)'],
       },
       accent: {
-        DEFAULT: colors.indigo[500],
-        secondary: [{ dark: colors.indigo[400] }, colors.indigo[600]],
+        DEFAULT: 'var(--color-indigo-500)',
+        secondary: [{ dark: 'var(--color-indigo-400)' }, 'var(--color-indigo-600)'],
       },
+      surface: {
+        DEFAULT: ''
+      }
     },
 
     fontSize: {
