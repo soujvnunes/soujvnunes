@@ -15,12 +15,10 @@ export const viewport: Viewport = {
   themeColor: `${resolveAtom(theme.aliases.colors.base)}`,
 }
 export const metadata: Metadata = {
+  creator: 'Victor Nunes',
   metadataBase: process.env.BASE_URL ? new URL(process.env.BASE_URL) : null,
   description: process.env.META_DESCRIPTION,
-  title: {
-    default: META_TITLE,
-    template: `%s | ${META_TITLE}`,
-  },
+  authors: [{ name: 'Victor Nunes', url: process.env.BASE_URL }],
   keywords: [
     'Victor Nunes',
     'soujvnunes',
@@ -33,8 +31,16 @@ export const metadata: Metadata = {
     'Portfolio',
     'JavaScript',
   ],
-  authors: [{ name: 'Victor Nunes', url: process.env.BASE_URL }],
-  creator: 'Victor Nunes',
+  alternates: {
+    canonical: process.env.BASE_URL,
+  },
+  verification: {
+    google: process.env.GOOGLE_SITE_VERIFICATION,
+  },
+  title: {
+    default: META_TITLE,
+    template: `${META_TITLE} | %s`,
+  },
   openGraph: {
     title: process.env.META_OG_TITLE,
     description: process.env.META_OG_DESCRIPTION,
@@ -95,6 +101,8 @@ export default function RootLayout({ children }: React.PropsWithChildren) {
               '@type': 'Person',
               name: 'Victor Nunes',
               url: process.env.BASE_URL,
+              description: process.env.META_DESCRIPTION,
+              image: `${process.env.BASE_URL}/opengraph-image`,
               jobTitle: 'Senior Frontend Engineer',
               sameAs: [
                 'https://github.com/soujvnunes',
