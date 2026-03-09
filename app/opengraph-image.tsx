@@ -25,18 +25,13 @@ export default async function RootOpengraphImage() {
           <span tw="text-[#FFFBF4]/40">https://</span>
           sou
           <span
+            tw="text-[#6366F1] tracking-[-0.2em]"
             style={{
               letterSpacing: '-.2em',
-              color: '#6366F1',
             }}>
             j
           </span>
-          <span
-            style={{
-              color: '#F59E0B',
-            }}>
-            v
-          </span>
+          <span tw="text-[#F59E0B]">v</span>
           nun.es
         </span>
         <svg
