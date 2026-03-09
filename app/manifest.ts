@@ -8,11 +8,9 @@ export default function manifest() {
     short_name: process.env.META_OG_TITLE,
     description: process.env.META_DESCRIPTION,
     icons: [
-      { src: '/favicon.ico', sizes: 'any', type: 'image/x-icon' },
-      { src: '/android-chrome-192x192.png', sizes: '192x192', type: 'image/png' },
-      { src: '/android-chrome-256x256.png', sizes: '256x256', type: 'image/png' },
-      { src: '/android-chrome-512x512.png', sizes: '512x512', type: 'image/png' },
-      { src: '/maskable_icon.png', sizes: '512x512', type: 'image/png', purpose: 'maskable' },
+      { src: '/icon/192', sizes: '192x192', type: 'image/png' },
+      { src: '/icon/512', sizes: '512x512', type: 'image/png' },
+      { src: '/icon/512', sizes: '512x512', type: 'image/png', purpose: 'maskable' },
     ],
   }
 }
