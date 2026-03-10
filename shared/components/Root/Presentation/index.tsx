@@ -5,14 +5,10 @@ import { FileUser } from 'lucide-react'
 
 import memojiFallback from '@/shared/assets/memoji-fallback.svg'
 
-import { i18nConfig } from '@/shared/lib/i18n'
-
 import { Button } from '@/shared/components/ui/Button'
 import { Card } from '@/shared/components/ui/Card'
 import { Memoji } from '@/shared/components/ui/Memoji'
 import { MemojiVideo } from '@/shared/components/ui/MemojiVideo'
-
-import { RootPresentationLocale } from './RootPresentationLocale'
 
 const RootPresentationMemoji = () => (
   <Memoji className="-mt-18">
@@ -29,17 +25,6 @@ const RootPresentationMemoji = () => (
     />
   </Memoji>
 )
-const RootPresentationLocales = () => (
-  <nav>
-    <ul>
-      {i18nConfig.locales.map((locale) => (
-        <li key={locale}>
-          <RootPresentationLocale locale={locale} />
-        </li>
-      ))}
-    </ul>
-  </nav>
-)
 
 interface RootPresentationProps {
   caption: string
@@ -49,7 +34,6 @@ interface RootPresentationProps {
 export const RootPresentation = (props: RootPresentationProps) => (
   <Card className="m-auto grid w-3xs place-items-center">
     <RootPresentationMemoji />
-    <RootPresentationLocales />
     <h1 className="contents">
       <span className="text-caption font-bold tracking-wider text-neutral-secondary uppercase">
         {props.caption}
