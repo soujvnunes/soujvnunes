@@ -21,10 +21,10 @@ export const RootFooterLocalesItem = (props: Omit<I18nConfig, 'dict'>) => {
 
   return (
     <Link
+      href={redirectedPathname(props.locale)}
       className={cn('text-caption font-bold', {
         'text-neutral': pathname.includes(props.locale),
-      })}
-      href={redirectedPathname(props.locale)}>
+      })}>
       {props.name}
     </Link>
   )
