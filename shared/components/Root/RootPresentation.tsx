@@ -7,6 +7,7 @@ import memojiFallback from '@/shared/assets/memoji-fallback.svg'
 
 import { i18nConfig } from '@/shared/lib/i18n'
 
+import { Button } from '@/shared/components/ui/Button'
 import { Card } from '@/shared/components/ui/Card'
 import { Memoji } from '@/shared/components/ui/Memoji'
 import { MemojiVideo } from '@/shared/components/ui/MemojiVideo'
@@ -55,13 +56,12 @@ export const RootPresentation = (props: RootPresentationProps) => (
       </span>
       <span className="text-body font-bold">Victor Nunes</span>
     </h1>
-    <Link
-      href="/Victor-Nunes_Senior-Software-Engineer_EMEA.pdf"
-      className="mt-2 inline-flex h-8 w-full min-w-8 items-center justify-center rounded-lg bg-amber-500/10 pr-2 pl-2 align-middle text-caption font-bold tracking-wide text-amber-600 uppercase hover:bg-amber-500/20 motion-safe:transition-colors dark:text-amber-400">
-      {props.cta}
-      <span className="-mr-1 ml-auto pl-1">
-        <FileUser className="size-5" />
-      </span>
-    </Link>
+    <Button
+      asChild
+      kind="full"
+      className="mt-2"
+      itemEnd={<FileUser className="size-5" />}>
+      <Link href="/Victor-Nunes_Senior-Software-Engineer_EMEA.pdf">{props.cta}</Link>
+    </Button>
   </Card>
 )
