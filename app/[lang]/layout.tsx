@@ -1,4 +1,4 @@
-import './tailwind.config.css'
+import '../tailwind.config.css'
 
 import type { Metadata, Viewport } from 'next'
 import { Google_Sans } from 'next/font/google'
