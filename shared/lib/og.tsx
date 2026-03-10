@@ -3,7 +3,7 @@ import { ImageResponse } from 'next/og'
 import { readFile } from 'node:fs/promises'
 import { join } from 'node:path'
 
-const loadFont = () => readFile(join(process.cwd(), 'shared/assets/googlesans-bold.otf'))
+const loadFont = () => readFile(join(process.cwd(), 'public/googlesans-bold.otf'))
 const createFontsConfig = (fontData: Buffer) => [
   {
     name: 'Google Sans',
