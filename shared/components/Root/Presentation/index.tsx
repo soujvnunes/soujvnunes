@@ -18,7 +18,7 @@ const RootPresentationMemoji = () => (
         <Image
           alt=""
           loading="eager"
-          className="scale-150"
+          className="absolute w-48 animate-pulse"
           src={memojiFallback}
         />
       }
