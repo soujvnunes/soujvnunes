@@ -18,12 +18,13 @@ const RootFooterLocales = () => (
     </ul>
   </nav>
 )
+const fullYear = new Date().getFullYear()
 
 export const RootFooter = () => (
-  <footer className="mx-auto flex w-full justify-between px-4 text-center text-neutral-secondary lg:max-w-5xl lg:px-8">
+  <footer className="mx-auto flex h-10 w-full items-center justify-between px-4 text-center text-neutral-secondary lg:max-w-5xl lg:px-8">
     <p>
-      <Logotype />
-      <span className="text-caption"> © {new Date().getFullYear()}</span>
+      <Logotype /> <span className="inline-block align-bottom text-subtitle leading-4">©</span>{' '}
+      <span className="text-caption">{fullYear}</span>
     </p>
     <RootFooterLocales />
   </footer>
