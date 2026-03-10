@@ -21,8 +21,7 @@ export const i18nConfig = {
 
 export const hasLocale = (locale: string): locale is I18nConfigLocale => locale in dictionaries
 
-// eslint-disable-next-line require-await
-export const getDictionary = async (locale: I18nConfigLocale = DEFAULT_LOCALE) => dictionaries[locale]()
+export const getDictionary = (locale: I18nConfigLocale = DEFAULT_LOCALE) => dictionaries[locale]()
 
 export const getLocale = (request: NextRequest) => {
   const negotiatorHeaders: Record<string, string> = {} // Negotiator expects plain object so we need to transform headers
