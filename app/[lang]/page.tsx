@@ -1,12 +1,22 @@
+import { notFound } from 'next/navigation'
+
+import { getDictionary, hasLocale } from '@/shared/lib/i18n'
+
 import { RootFooter } from '@/shared/components/Root/RootFooter'
 import { RootPresentation } from '@/shared/components/Root/RootPresentation'
 import { HeroBackground } from '@/shared/components/ui/Background'
 
-export default function RootPage() {
+export default async function RootPage(props: PageProps<'/[lang]'>) {
+  const { lang } = await props.params
+
+  if (!hasLocale(lang)) notFound()
+
+  const dictionary = await getDictionary(lang)
+
   return (
     <>
       <main className="flex h-[calc(100dvh-40px)]">
-        <RootPresentation />
+        <RootPresentation {...dictionary.root.presentation} />
       </main>
       <RootFooter />
       <HeroBackground />
