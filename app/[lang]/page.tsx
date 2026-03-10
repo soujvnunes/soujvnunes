@@ -16,7 +16,10 @@ export default async function RootPage(props: PageProps<'/[lang]'>) {
   return (
     <>
       <main className="flex h-[calc(100dvh-40px)]">
-        <RootPresentation {...dictionary.root.presentation} />
+        <RootPresentation
+          cta={dictionary.root.presentation.cta}
+          caption={dictionary.root.presentation.caption}
+        />
       </main>
       <RootFooter />
       <HeroBackground />
