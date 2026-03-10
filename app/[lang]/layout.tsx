@@ -83,7 +83,7 @@ const googleSans = Google_Sans({
   ],
 })
 
-export default function RootLayout({ children }: React.PropsWithChildren) {
+export default function RootLayout({ children }: LayoutProps<'/[lang]'>) {
   return (
     <html
       lang="en"
