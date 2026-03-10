@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation'
 
-import { getDictionary, hasLocale } from '@/shared/lib/i18n'
+import { getDict, hasLocale } from '@/shared/lib/i18n'
 
 import { RootFooter } from '@/shared/components/Root/Footer'
 import { RootPresentation } from '@/shared/components/Root/Presentation'
@@ -11,7 +11,7 @@ export default async function RootPage(props: PageProps<'/[lang]'>) {
 
   if (!hasLocale(lang)) notFound()
 
-  const dictionary = await getDictionary(lang)
+  const dictionary = await getDict(lang)
 
   return (
     <>
