@@ -3,8 +3,8 @@ import Link from 'next/link'
 import { FileUser } from 'lucide-react'
 
 import { Memoji } from '@/shared/components/Memoji'
-import { HeroBackground } from '@/shared/components/ui/background'
-import { Card } from '@/shared/components/ui/card'
+import { HeroBackground } from '@/shared/components/ui/Background'
+import { Card } from '@/shared/components/ui/Card'
 import { Logotype } from '@/shared/components/ui/Logos'
 
 export default function RootPage() {
@@ -14,7 +14,7 @@ export default function RootPage() {
         <Card className="m-auto grid w-3xs place-items-center">
           <Memoji className="-mt-18" />
           <h1 className="contents">
-            <span className="text-neutral-secondary text-caption font-bold tracking-wider uppercase">
+            <span className="text-caption font-bold tracking-wider text-neutral-secondary uppercase">
               Senior Frontend Engineer
             </span>
             <span className="text-body font-bold">Victor Nunes</span>
@@ -29,7 +29,7 @@ export default function RootPage() {
           </Link>
         </Card>
       </main>
-      <footer className="text-neutral-secondary mx-auto w-full px-4 text-center lg:max-w-5xl lg:px-8">
+      <footer className="mx-auto w-full px-4 text-center text-neutral-secondary lg:max-w-5xl lg:px-8">
         <Logotype />
         <span className="text-caption"> © {new Date().getFullYear()}</span>
       </footer>
