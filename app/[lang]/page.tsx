@@ -2,8 +2,8 @@ import { notFound } from 'next/navigation'
 
 import { getDictionary, hasLocale } from '@/shared/lib/i18n'
 
-import { RootFooter } from '@/shared/components/Root/Footer/RootFooter'
-import { RootPresentation } from '@/shared/components/Root/Presentation/RootPresentation'
+import { RootFooter } from '@/shared/components/Root/Footer'
+import { RootPresentation } from '@/shared/components/Root/Presentation'
 import { HeroBackground } from '@/shared/components/ui/Background'
 
 export default async function RootPage(props: PageProps<'/[lang]'>) {
