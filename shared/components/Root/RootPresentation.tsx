@@ -24,19 +24,24 @@ const RootPresentationMemoji = () => (
   </Memoji>
 )
 
-export const RootPresentation = () => (
+interface RootPresentationProps {
+  caption: string
+  cta: string
+}
+
+export const RootPresentation = (props: RootPresentationProps) => (
   <Card className="m-auto grid w-3xs place-items-center">
     <RootPresentationMemoji />
     <h1 className="contents">
       <span className="text-caption font-bold tracking-wider text-neutral-secondary uppercase">
-        Senior Frontend Engineer
+        {props.caption}
       </span>
       <span className="text-body font-bold">Victor Nunes</span>
     </h1>
     <Link
       href="/Victor-Nunes_Senior-Software-Engineer_EMEA.pdf"
       className="mt-2 inline-flex h-8 w-full min-w-8 items-center justify-center rounded-lg bg-amber-500/10 pr-2 pl-2 align-middle text-caption font-bold tracking-wide text-amber-600 uppercase hover:bg-amber-500/20 motion-safe:transition-colors dark:text-amber-400">
-      View CV
+      {props.cta}
       <span className="-mr-1 ml-auto pl-1">
         <FileUser className="size-5" />
       </span>
