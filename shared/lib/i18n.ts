@@ -12,7 +12,7 @@ const dictionaries = {
   pt: () => import('../../public/dictionaries/pt.json').then((module) => module.default),
 } as const
 
-type I18nConfigLocale = keyof typeof dictionaries
+export type I18nConfigLocale = keyof typeof dictionaries
 
 export const i18nConfig = {
   defaultLocale: DEFAULT_LOCALE,
