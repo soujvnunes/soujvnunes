@@ -9,6 +9,8 @@ import { Analytics } from '@vercel/analytics/next'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import { resolveAtom } from 'themizer'
 
+import { dicts } from '@/shared/lib/i18n'
+
 const META_TITLE = process.env.META_TITLE ?? 'Victor Nunes • Senior Frontend Engineer'
 
 export const viewport: Viewport = {
@@ -82,6 +84,10 @@ const googleSans = Google_Sans({
     'Noto Color Emoji',
   ],
 })
+
+export function generateStaticParams() {
+  return dicts.map((dict) => ({ lang: dict.locale }))
+}
 
 export default function RootLayout({ children }: LayoutProps<'/[lang]'>) {
   return (
