@@ -89,10 +89,12 @@ export function generateStaticParams() {
   return dicts.map((dict) => ({ lang: dict.locale }))
 }
 
-export default function RootLayout({ children }: LayoutProps<'/[lang]'>) {
+export default async function RootLayout({ children, params }: LayoutProps<'/[lang]'>) {
+  const { lang } = await params
+
   return (
     <html
-      lang="en"
+      lang={lang}
       className={googleSans.variable}>
       <body className="bg-base text-neutral antialiased">
         <div className="isolate min-h-dvh">{children}</div>
