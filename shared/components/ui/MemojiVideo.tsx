@@ -10,7 +10,12 @@ type State = {
   isPaused: boolean
   isPlaying: boolean
 }
-type Action = { type: 'PAUSE' } | { type: 'PLAYING' } | { type: 'CAN_PLAY' } | { type: 'ENDED' }
+type Action =
+  | { type: 'PAUSE' }
+  | { type: 'PLAYING' }
+  | { type: 'CAN_PLAY' }
+  | { type: 'LOOP' }
+  | { type: 'ENDED' }
 
 const initialState: State = {
   isPlaying: false,
@@ -25,6 +30,8 @@ const reducer = (state: State, action: Action): State => {
       return { ...state, isPlaying: true, isPaused: false }
     case 'CAN_PLAY':
       return { ...state, canPlay: true }
+    case 'LOOP':
+      return { ...state, isPaused: false }
     case 'ENDED':
       return { ...state, isPlaying: false }
     default:
@@ -58,10 +65,11 @@ export const MemojiVideo = ({ fallback, className, ...props }: MemojiVideoProps)
         onEnded={(event) => {
           const video = event.currentTarget
 
+          dispatch({ type: 'LOOP' })
+
           video.currentTime = 7
           video.play().catch(() => {
             video.currentTime = 0
-
             dispatch({ type: 'ENDED' })
           })
         }}
