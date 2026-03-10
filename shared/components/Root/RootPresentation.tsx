@@ -9,7 +9,7 @@ import { Card } from '@/shared/components/ui/Card'
 import { Memoji } from '@/shared/components/ui/Memoji'
 import { MemojiVideo } from '@/shared/components/ui/MemojiVideo'
 
-const RootCardMemoji = () => (
+const RootPresentationMemoji = () => (
   <Memoji className="-mt-18">
     <MemojiVideo
       src="/memoji.mov"
@@ -24,9 +24,9 @@ const RootCardMemoji = () => (
   </Memoji>
 )
 
-export const RootCard = () => (
+export const RootPresentation = () => (
   <Card className="m-auto grid w-3xs place-items-center">
-    <RootCardMemoji />
+    <RootPresentationMemoji />
     <h1 className="contents">
       <span className="text-caption font-bold tracking-wider text-neutral-secondary uppercase">
         Senior Frontend Engineer
