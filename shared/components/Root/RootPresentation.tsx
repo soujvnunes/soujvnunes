@@ -20,6 +20,7 @@ const RootPresentationMemoji = () => (
       fallback={
         <Image
           alt=""
+          loading="eager"
           className="scale-150"
           src={memojiFallback}
         />
