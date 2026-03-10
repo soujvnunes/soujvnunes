@@ -5,11 +5,9 @@ import { useEffect, useState } from 'react'
 
 import { cn } from '@/shared/utils/shadcn'
 
-export const MemojiVideo = ({
-  fallback,
-  className,
-  ...props
-}: React.ComponentProps<'video'> & SuspenseProps) => {
+export type MemojiVideoProps = React.ComponentProps<'video'> & SuspenseProps
+
+export const MemojiVideo = ({ fallback, className, ...props }: MemojiVideoProps) => {
   const [supportsHevc, setSupportsHevc] = useState<boolean | null>(null)
 
   useEffect(() => {
