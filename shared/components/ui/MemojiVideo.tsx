@@ -47,7 +47,13 @@ export const MemojiVideo = ({ fallback, className, ...props }: MemojiVideoProps)
         preload="none"
         crossOrigin="anonymous"
         onPause={() => dispatch({ type: 'PAUSE' })}
-        onPlaying={() => dispatch({ type: 'PLAYING' })}
+        onPlaying={(event) => {
+          if (!state.isPlaying) {
+            event.currentTarget.currentTime = 0
+          }
+
+          dispatch({ type: 'PLAYING' })
+        }}
         onCanPlayThrough={() => dispatch({ type: 'CAN_PLAY' })}
         onEnded={(event) => {
           const video = event.currentTarget
