@@ -6,7 +6,7 @@ import { getLocale, i18nConfig } from './shared/lib/i18n'
 export function proxy(request: NextRequest) {
   const pathname = request.nextUrl.pathname
 
-  if (/\.[a-zA-Z0-9]+$/.test(pathname)) return NextResponse.next() // Skip static files (anything with an extension like .pdf, .mov, .png, etc.)
+  if (/\.[a-zA-Z0-9]+$/.test(pathname)) return // Skip static files (anything with an extension like .pdf, .mov, .png, etc.)
 
   // Redirect if there is no locale
   if (
@@ -20,6 +20,5 @@ export function proxy(request: NextRequest) {
 }
 
 export const config = {
-  // Matcher ignoring `/_next/` and `/api/`
-  matcher: ['/((?!api|_next).*)'],
+  matcher: ['/((?!api|_next).*)'], // Matcher ignoring `/_next/` and `/api/`
 }
