@@ -29,8 +29,10 @@
   "--themeb7": "--theme-aliases-fontSize-subtitle",
   "--themeb8": "--theme-aliases-fontSize-body",
   "--themeb9": "--theme-aliases-fontSize-caption",
-  "--themec0": "--theme-aliases-spacing-grid-padding",
-  "--themec1": "--theme-aliases-spacing-grid-margin",
-  "--themec2": "--theme-aliases-transitionTimingFunction-bounce",
-  "--themec3": "--theme-aliases-transitionTimingFunction-ease"
+  "--themec0": "--theme-aliases-spacing-padding",
+  "--themec1": "--theme-aliases-spacing-margin",
+  "--themec2": "--theme-aliases-spacing-form",
+  "--themec3": "--theme-aliases-spacing-header",
+  "--themec4": "--theme-aliases-transitionTimingFunction-bounce",
+  "--themec5": "--theme-aliases-transitionTimingFunction-ease"
 }
