@@ -4,10 +4,11 @@ import type { Metadata, Viewport } from 'next'
 import { Google_Sans } from 'next/font/google'
 import Script from 'next/script'
 
-import { theme } from '@/themizer.config'
 import { Analytics } from '@vercel/analytics/next'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import { resolveAtom } from 'themizer'
+
+import { theme } from '@/themizer.config'
 
 import { dicts } from '@/shared/lib/i18n'
 
