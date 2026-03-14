@@ -74,10 +74,10 @@ export const theme = themizer(
     },
 
     spacing: {
-      grid: {
-        padding: [{ desktop: sizing[16] }, sizing[8]],
-        margin: [{ desktop: sizing[24] }, sizing[16]],
-      },
+      padding: [{ desktop: sizing[16] }, sizing[8]],
+      margin: [{ desktop: sizing[24] }, sizing[16]],
+      form: sizing[40],
+      header: sizing[64],
     },
 
     transitionTimingFunction: {
