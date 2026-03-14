@@ -20,5 +20,5 @@ export function proxy(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ['/((?!api|_next).*)'], // Matcher ignoring `/_next/` and `/api/`
+  matcher: ['/((?!api|_next|.*\\.[\\w]+$).*)'], // Matcher ignoring `/_next/`, `/api/`, and static files
 }
