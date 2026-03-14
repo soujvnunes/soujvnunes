@@ -210,6 +210,7 @@ export default [
             '/^react/',
             '/^next/',
             'module',
+            '/@/themizer/',
             '/@/shared/assets/',
             '/@/shared/utils/',
             '/@/shared/lib/',
