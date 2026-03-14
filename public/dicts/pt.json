@@ -1,5 +1,8 @@
 {
   "root": {
+    "header": {
+      "headline": "Irei {main:projetar} e {main:desenvolver} algo extraordinário para você!"
+    },
     "presentation": {
       "caption": "Engenheiro Front-end Sênior",
       "cta": "Ver currículo"

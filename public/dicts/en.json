@@ -1,5 +1,8 @@
 {
   "root": {
+    "header": {
+      "headline": "Lemme {main:design} & {main:develop} you something extraordinary!"
+    },
     "presentation": {
       "caption": "Senior Frontend Engineer",
       "cta": "View CV"
