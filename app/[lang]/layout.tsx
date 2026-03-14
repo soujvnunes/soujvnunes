@@ -68,6 +68,11 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: 'black-translucent',
+    title: META_TITLE,
+  },
 }
 
 const googleSans = Google_Sans({
