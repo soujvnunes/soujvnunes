@@ -9,7 +9,7 @@ const HeroBackgroundRapport = ({ className, src }: { className: string; src: str
 )
 
 export const HeroBackground = () => (
-  <div className="fixed inset-0 -z-10">
+  <div className="absolute inset-0 -z-10">
     <HeroBackgroundRapport
       className="dark:hidden"
       src={rapport.src}
