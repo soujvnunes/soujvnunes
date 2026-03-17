@@ -11,7 +11,7 @@ import { Memoji } from '@/shared/components/ui/Memoji'
 import { MemojiVideo } from '@/shared/components/ui/MemojiVideo'
 
 const RootPresentationMemoji = () => (
-  <Memoji className="-mt-18">
+  <Memoji className="absolute left-0 -ml-20 shrink-0">
     <MemojiVideo
       src="/memoji.mov"
       fallback={
@@ -32,14 +32,14 @@ interface RootPresentationProps {
 }
 
 export const RootPresentation = (props: RootPresentationProps) => (
-  <Card className="m-auto grid w-3xs place-items-center">
+  <Card className="inline-flex w-3xs place-items-center">
     <RootPresentationMemoji />
-    <h1 className="contents">
+    <h2 className="contents">
       <span className="text-caption font-bold tracking-wider text-neutral-secondary uppercase">
         {props.caption}
       </span>
       <span className="text-body font-bold">Victor Nunes</span>
-    </h1>
+    </h2>
     <Button
       asChild
       kind="full"
