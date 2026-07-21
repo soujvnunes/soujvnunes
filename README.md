@@ -36,9 +36,8 @@ Fintech building [Palpitada](https://palpitada.com.br/) — a decentralised mark
 - **94% reduction in build complexity** (17k → 1k modules), **2.5s TTFB improvement** via SSR migration, optimistic cache updates and SSE
 - Proactive issue detection via Microsoft Clarity dead-click analysis — shifted **40% of fixes** from reactive to preventive
 
-### Polkamarkets Labs — Senior Software Engineer
-
-_Remote · Contract · Aug 2022 – Feb 2024 · Porto, Portugal_
+<details>
+<summary><strong>Polkamarkets Labs</strong> — Senior Software Engineer <em>(Aug 2022 – Feb 2024 · Porto, Portugal)</em></summary>
 
 [Polkamarkets App](https://app.polkamarkets.com/) — DeFi platform, 10,000+ users trading outcome fractions with $POLK. ([contributions](https://github.com/Polkamarkets/polkamarkets-web/commits?author=soujvnunes))
 
@@ -46,32 +45,37 @@ _Remote · Contract · Aug 2022 – Feb 2024 · Porto, Portugal_
 - **15% Lighthouse improvement** through code-splitting and asset optimization
 - Established a testing culture (Jest) — **50% regression reduction**, feature delivery from 5 to 3 days
 
-### Wellhub — Software Engineer
+</details>
 
-_Remote · Permanent · Aug 2021 – Jul 2022 · São Paulo, Brazil_
+<details>
+<summary><strong>Wellhub</strong> — Software Engineer <em>(Aug 2021 – Jul 2022 · São Paulo, Brazil)</em></summary>
 
 Global corporate wellness platform, 26,000+ mental health support employees. QR-code onboarding UI and design token work covered in [this article](https://medium.com/@soujvnunes/uma-das-possíveis-maneiras-de-criar-design-tokens-d52a8c315b2).
 
 - **10% productivity gain** via design token centralization and component standardization
 - Owned end-to-end QR-code onboarding, migrating ~500,000 users from Vitalk to Wellz
 
-### Bepro Network — Junior Software Engineer
+</details>
 
-_Remote · Contract · Nov 2020 – Jul 2021 · Lisbon, Portugal_
+<details>
+<summary><strong>Bepro Network</strong> — Junior Software Engineer <em>(Nov 2020 – Jul 2021 · Lisbon, Portugal)</em></summary>
 
 [Bepro App](https://app.bepro.network) — Web3 bounty marketplace, 300+ developers. ([contributions](https://github.com/bepronetwork/web-network/commits?author=soujvnunes))
 
 - Decentralised wallet-based authentication for protocol users
 - **15% Core Web Vitals improvement** via lazy-loading and dynamic asset purging
 
-### UFAL (Federal University of Alagoas) — Junior Software Engineer
+</details>
 
-_On-site · Contract · Jul 2019 – Jul 2021 · Alagoas, Brazil_
+<details>
+<summary><strong>UFAL</strong> (Federal University of Alagoas) — Junior Software Engineer <em>(Jul 2019 – Jul 2021 · Alagoas, Brazil)</em></summary>
 
 [UFAL 60 Years](https://sites.ufal.br/ufal-60-anos/) virtual exhibition ([Behance](https://www.behance.net/gallery/140840807/WIP-UFAL-60-Anos-%28Redesign%29), [contributions](https://github.com/soujvnunes/virtual-exhibition/commits?author=soujvnunes))
 
 - Optimised web gallery for 500+ visitors under poor network conditions (progressive image loading, Lite Mode)
 - Led role-based (patients, interns, admins) EHR system design/frontend, replacing paper workflows with cloud storage
+
+</details>
 
 ## Open Source
 
@@ -85,17 +89,19 @@ _On-site · Contract · Jul 2019 – Jul 2021 · Alagoas, Brazil_
 
 ## Technical Skills
 
-**AI Development:** Claude Code · GitHub Copilot · Lovable · Anthropic API integration
-**Core Stack:** TypeScript · JavaScript (ES6+) · React 19 · Next.js 16 (App Router) · Node.js · Express
-**State & Data:** Redux Toolkit · RTK Query · Zustand · React Context API · MongoDB · Mongoose · REST APIs · GraphQL
-**Real-Time & Performance:** WebSockets · Socket.io · Server-Sent Events · React Server Components · Server Actions · Optimistic Updates
-**Design Systems:** Tailwind CSS · Radix UI · shadcn/ui · Headless UI
-**Design Ops:** Figma (Design-to-Code) · Storybook · Responsive Design · WCAG 2.1 AA
-**Web3 & Blockchain:** Thirdweb SDK · Wagmi · Viem · Ethers.js · Reown (AppKit) · MetaMask · WalletConnect · Web3Auth · Ethereum · Chiliz Chain
-**QA:** Vitest · Jest · Playwright · React Testing Library · ESLint · Prettier · Lighthouse · Microsoft Clarity
-**DevOps & Infrastructure:** Vite · Webpack · Turbopack · PNPM · GitHub Actions · Vercel · DigitalOcean · Docker
-**Compliance & Security:** COPPA Regulatory Compliance · Zero-Trust Authentication · Age-Gated Workflows · Passwordless Auth Patterns
-**Legacy & Migration:** React 16.8 (Class Components) · Next.js 11 (Pages Router) · SSR/SSG Patterns · Styled Components · CSS-in-JS · SASS/SCSS · Material UI
+| Category | Technologies |
+| --- | --- |
+| **AI Development** | Claude Code · GitHub Copilot · Lovable · Anthropic API integration |
+| **Core Stack** | TypeScript · JavaScript (ES6+) · React 19 · Next.js 16 (App Router) · Node.js · Express |
+| **State & Data** | Redux Toolkit · RTK Query · Zustand · React Context API · MongoDB · Mongoose · REST APIs · GraphQL |
+| **Real-Time & Performance** | WebSockets · Socket.io · Server-Sent Events · React Server Components · Server Actions · Optimistic Updates |
+| **Design Systems** | Tailwind CSS · Radix UI · shadcn/ui · Headless UI |
+| **Design Ops** | Figma (Design-to-Code) · Storybook · Responsive Design · WCAG 2.1 AA |
+| **Web3 & Blockchain** | Thirdweb SDK · Wagmi · Viem · Ethers.js · Reown (AppKit) · MetaMask · WalletConnect · Web3Auth · Ethereum · Chiliz Chain |
+| **QA** | Vitest · Jest · Playwright · React Testing Library · ESLint · Prettier · Lighthouse · Microsoft Clarity |
+| **DevOps & Infrastructure** | Vite · Webpack · Turbopack · PNPM · GitHub Actions · Vercel · DigitalOcean · Docker |
+| **Compliance & Security** | COPPA Regulatory Compliance · Zero-Trust Authentication · Age-Gated Workflows · Passwordless Auth Patterns |
+| **Legacy & Migration** | React 16.8 (Class Components) · Next.js 11 (Pages Router) · SSR/SSG Patterns · Styled Components · CSS-in-JS · SASS/SCSS · Material UI |
 
 ## Languages
 
