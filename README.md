@@ -107,5 +107,4 @@ _On-site · Contract · Jul 2019 – Jul 2021 · Alagoas, Brazil_
 ## Let's Connect
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/soujvnunes/)
-[![CV](https://img.shields.io/badge/CV-F59E0B?style=flat&logo=readdotcv&logoColor=white)](https://soujvnunes.github.io/public/Victor-Nunes_Senior-Software-Engineer.pdf)
 [![Email](https://img.shields.io/badge/Email-EA4335?style=flat&logo=gmail&logoColor=white)](mailto:soujvnunes@gmail.com)
