@@ -1,5 +1,3 @@
-# Victor Nunes
-
 **Senior Software Engineer** with 6+ years of greenfield ownership from architecture to production for European and US startups, specialising in AI-augmented engineering for fintech and Web3 products. Highlights include a Web3 MVP shipped 40% ahead of schedule and a 2.5s TTFB improvement on a live decentralised application.
 
 - **Work Authorization:** Open to European sponsorship opportunities · Previously resided in Dublin
