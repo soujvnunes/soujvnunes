@@ -33,7 +33,7 @@ _Remote · 6-month contract · May 2025 – Nov 2025 · São Paulo, Brazil_
 Fintech building [Palpitada](https://palpitada.com.br/), a decentralised marketplace platform with 1000+ monthly user transactions.
 
 - Technical leadership across Palpitada's 12-week MVP sprint; mentored engineers, coordinated cross-functional roadmaps with backend/design
-- **94% reduction in build complexity** (17k → 1k modules), **2.5s TTFB improvement** via SSR migration, optimistic cache updates and SSE
+- **94% reduction in build complexity** (from 17k to 1k modules), **2.5s TTFB improvement** via SSR migration, optimistic cache updates and SSE
 - Established proactive issue detection via Microsoft Clarity dead-click analysis, shifting **40% of fixes** from reactive to preventive
 
 <details>
