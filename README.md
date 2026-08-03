@@ -1,22 +1,27 @@
-**Senior Software Engineer** with 7+ years of greenfield ownership from architecture to production for European and US startups, specialising in AI-augmented engineering for fintech and Web3 products:
-
-- **[Palpitada](https://palpitada.com.br/):** Led the MVP and the SSR migration behind it (17k to 1k modules, 2.5s faster TTFB).
-- **[Polkamarkets](https://app.polkamarkets.com/):** Shipped App v2 at WCAG 2.1 AA. ([commits](https://github.com/Polkamarkets/polkamarkets-web/commits?author=soujvnunes))
-- **[Bepro](https://app.bepro.network):** Wallet-based auth for protocol users. ([commits](https://github.com/bepronetwork/web-network/commits?author=soujvnunes))
-- **[UFAL 60 Years](https://sites.ufal.br/ufal-60-anos/):** Virtual exhibition built for poor-network visitors. ([commits](https://github.com/soujvnunes/virtual-exhibition/commits?author=soujvnunes) · [Behance](https://www.behance.net/gallery/140840807/WIP-UFAL-60-Anos-%28Redesign%29))
-- **Wellhub:** QR-code onboarding that migrated ~500k users; design token system ([write-up](https://medium.com/@soujvnunes/uma-das-possíveis-maneiras-de-criar-design-tokens-d52a8c315b2)).
-- **[themizer](https://github.com/soujvnunes/themizer)** — CLI turning CSS utility classes into type-safe design tokens. OKLCH palette expansion, framework detection for Next.js/Remix/Vite.
-- **[tailwind-expand](https://github.com/soujvnunes/tailwind-expand)** — build-time expansion of CSS component aliases into Tailwind classes. Vite/PostCSS/Babel/SWC plugins, zero runtime.
-
-## Connect
+# Victor Nunes
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/soujvnunes/)
 [![Email](https://img.shields.io/badge/Email-EA4335?style=flat&logo=gmail&logoColor=white)](mailto:soujvnunes@gmail.com)
 
+**Product Engineer** specialising in AI-augmented development for fintech and Web3 apps. Highlights include a Web3 MVP shipped 40% ahead of schedule and a 2.5s TTFB improvement on a live decentralised application:
+
+- **Financial Assessment Tool (DevSignal):** AI extraction of audited PDFs into a KPI dashboard, behind a server-first processing boundary and a 7-day extraction cache. 100% Vercel Speed Insights.
+- **Sports Challenge App (EARNZY):** Greenfield Web3 youth-sports gamification MVP in an 8-week sprint; COPPA-compliant passwordless auth for under-13s.
+- **[Palpitada](https://palpitada.com.br/) (MetaMatch):** Led the MVP and the SSR migration behind it (17k to 1k modules, 2.5s faster TTFB).
+- **[Polkamarkets App](https://app.polkamarkets.com/):** Shipped App v2 at WCAG 2.1 AA. ([commits](https://github.com/Polkamarkets/polkamarkets-web/commits?author=soujvnunes))
+- **Wellz Migration (Wellhub):** QR-code onboarding that migrated ~500k users; design token system ([write-up](https://medium.com/@soujvnunes/uma-das-possíveis-maneiras-de-criar-design-tokens-d52a8c315b2)).
+- **[Bepro App](https://app.bepro.network):** Wallet-based auth for protocol users. ([commits](https://github.com/bepronetwork/web-network/commits?author=soujvnunes))
+- **[Institutional Virtual Gallery](https://sites.ufal.br/ufal-60-anos/) (UFAL):** Virtual exhibition built for poor-network visitors. ([commits](https://github.com/soujvnunes/virtual-exhibition/commits?author=soujvnunes) · [Behance](https://www.behance.net/gallery/140840807/WIP-UFAL-60-Anos-%28Redesign%29))
+
+#### Open-source
+
+- **[themizer](https://github.com/soujvnunes/themizer):** _(archived)_ CLI turning CSS utility classes into type-safe design tokens. OKLCH palette expansion, framework detection for Next.js/Remix/Vite.
+- **[tailwind-expand](https://github.com/soujvnunes/tailwind-expand):** _(archived)_ Build-time expansion of CSS component aliases into Tailwind classes. Vite/PostCSS/Babel/SWC plugins, zero runtime.
+
 <details>
 <summary><strong>Summary</strong></summary>
 
-Highlights include a Web3 MVP shipped 40% ahead of schedule and a 2.5s TTFB improvement on a live decentralised application.
+7+ years of greenfield ownership from architecture to production for European and US startups.
 
 - **Work Authorization:** Open to European sponsorship opportunities · Previously resided in Dublin
 - **Timezone:** UTC-3 (Brazil) · Flexible to European/US Eastern/Pacific hours
@@ -69,7 +74,7 @@ _Remote · Contract · Aug 2022 – Feb 2024 · Porto, Portugal_
 
 ### Wellhub: Software Engineer
 
-_Remote · Contract · Aug 2021 – Jul 2022 · São Paulo, Brazil_
+_Remote · Full-time · Aug 2021 – Jul 2022 · São Paulo, Brazil_
 
 Global corporate wellness platform, 26,000+ mental health support employees. QR-code onboarding UI and design token work covered in [this article](https://medium.com/@soujvnunes/uma-das-possíveis-maneiras-de-criar-design-tokens-d52a8c315b2).
 
@@ -78,7 +83,7 @@ Global corporate wellness platform, 26,000+ mental health support employees. QR-
 
 ### Bepro Network: Junior Software Engineer
 
-_Remote · Contract · Nov 2020 – Jul 2021 · Lisbon, Portugal_
+_Remote · Part-time · Nov 2020 – Jul 2021 · Lisbon, Portugal_
 
 [Bepro App](https://app.bepro.network), a Web3 bounty marketplace with 300+ developers. ([contributions](https://github.com/bepronetwork/web-network/commits?author=soujvnunes))
 
@@ -87,7 +92,7 @@ _Remote · Contract · Nov 2020 – Jul 2021 · Lisbon, Portugal_
 
 ### UFAL (Federal University of Alagoas): Junior Software Engineer
 
-_Remote · Contract · Jul 2019 – Jul 2021 · Alagoas, Brazil_
+_On-site · Internship · Jul 2019 – Jul 2021 · Alagoas, Brazil_
 
 [UFAL 60 Years](https://sites.ufal.br/ufal-60-anos/) virtual exhibition ([Behance](https://www.behance.net/gallery/140840807/WIP-UFAL-60-Anos-%28Redesign%29), [contributions](https://github.com/soujvnunes/virtual-exhibition/commits?author=soujvnunes))
 
