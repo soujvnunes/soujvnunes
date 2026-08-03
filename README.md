@@ -1,4 +1,4 @@
-**Senior Software Engineer** with 6+ years of greenfield ownership from architecture to production for European and US startups, specialising in AI-augmented engineering for fintech and Web3 products:
+**Senior Software Engineer** with 7+ years of greenfield ownership from architecture to production for European and US startups, specialising in AI-augmented engineering for fintech and Web3 products:
 
 - **[Palpitada](https://palpitada.com.br/):** Led the MVP and the SSR migration behind it (17k to 1k modules, 2.5s faster TTFB).
 - **[Polkamarkets](https://app.polkamarkets.com/):** Shipped App v2 at WCAG 2.1 AA. ([commits](https://github.com/Polkamarkets/polkamarkets-web/commits?author=soujvnunes))
