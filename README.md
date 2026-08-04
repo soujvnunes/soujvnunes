@@ -17,6 +17,7 @@
 
 #### Open-source
 
+- **[@soujvnunes/packages](https://github.com/soujvnunes/packages):** Six npm packages shared across my repos: ESLint/Prettier/Stylelint config factories, React utilities (hooked-context factory, error boundary, motion helpers), zero-dependency TypeScript utilities, and a serverless Mongoose/Typegoose layer.
 - **[themizer](https://github.com/soujvnunes/themizer):** _(archived)_ CLI turning CSS utility classes into type-safe design tokens. OKLCH palette expansion, framework detection for Next.js/Remix/Vite.
 - **[tailwind-expand](https://github.com/soujvnunes/tailwind-expand):** _(archived)_ Build-time expansion of CSS component aliases into Tailwind classes. Vite/PostCSS/Babel/SWC plugins, zero runtime.
 
