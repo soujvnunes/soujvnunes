@@ -3,11 +3,13 @@
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/soujvnunes/)
 [![Email](https://img.shields.io/badge/Email-EA4335?style=flat&logo=gmail&logoColor=white)](mailto:soujvnunes@gmail.com)
 
-**Product Engineer** specialising in AI-augmented development for fintech and Web3 apps. Highlights include a Web3 MVP shipped 40% ahead of schedule and a 2.5s TTFB improvement on a live decentralised application:
+**Senior Product Engineer** with 7+ years of greenfield ownership from architecture to production for European and US startups, specializing in AI-augmented development for fintech and Web3 products.
+
+#### Products
 
 - **Financial Assessment Tool (DevSignal):** AI extraction of audited PDFs into a KPI dashboard, behind a server-first processing boundary and a 7-day extraction cache. 100% Vercel Speed Insights.
-- **Sports Challenge App (EARNZY):** Greenfield Web3 youth-sports gamification MVP in an 8-week sprint; COPPA-compliant passwordless auth for under-13s.
-- **[Palpitada](https://palpitada.com.br/) (MetaMatch):** Led the MVP and the SSR migration behind it (17k to 1k modules, 2.5s faster TTFB).
+- **Sports Challenge App (EARNZY):** Greenfield Web3 youth-sports gamification MVP in an 8-week sprint shipped 40% ahead of schedule; COPPA-compliant passwordless auth for under-13s.
+- **[Palpitada](https://palpitada.com.br/) (MetaMatch):** Led the MVP and the SSR migration behind its live decentralised application, improving TTFB by 2.5s (17k to 1k modules at launch).
 - **[Polkamarkets App](https://app.polkamarkets.com/):** Shipped App v2 at WCAG 2.1 AA. ([commits](https://github.com/Polkamarkets/polkamarkets-web/commits?author=soujvnunes))
 - **Wellz Migration (Wellhub):** QR-code onboarding that migrated ~500k users; design token system ([write-up](https://medium.com/@soujvnunes/uma-das-possíveis-maneiras-de-criar-design-tokens-d52a8c315b2)).
 - **[Bepro App](https://app.bepro.network):** Wallet-based auth for protocol users. ([commits](https://github.com/bepronetwork/web-network/commits?author=soujvnunes))
@@ -17,17 +19,6 @@
 
 - **[themizer](https://github.com/soujvnunes/themizer):** _(archived)_ CLI turning CSS utility classes into type-safe design tokens. OKLCH palette expansion, framework detection for Next.js/Remix/Vite.
 - **[tailwind-expand](https://github.com/soujvnunes/tailwind-expand):** _(archived)_ Build-time expansion of CSS component aliases into Tailwind classes. Vite/PostCSS/Babel/SWC plugins, zero runtime.
-
-<details>
-<summary><strong>Summary</strong></summary>
-
-7+ years of greenfield ownership from architecture to production for European and US startups.
-
-- **Work Authorization:** Open to European sponsorship opportunities · Previously resided in Dublin
-- **Timezone:** UTC-3 (Brazil) · Flexible to European/US Eastern/Pacific hours
-- **Availability:** Immediate start (remote/contract) · Relocation open (hybrid/on-site)
-
-</details>
 
 <details>
 <summary><strong>Work Experience</strong></summary>
