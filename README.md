@@ -7,19 +7,19 @@
 
 #### Products
 
-- **Financial Assessment Tool (DevSignal):** AI extraction of audited PDFs into a KPI dashboard, behind a server-first processing boundary and a 7-day extraction cache. 100% Vercel Speed Insights.
-- **Sports Challenge App (EARNZY):** Greenfield Web3 youth-sports gamification MVP in an 8-week sprint shipped 40% ahead of schedule; COPPA-compliant passwordless auth for under-13s.
-- **[Palpitada](https://palpitada.com.br/) (MetaMatch):** Led the MVP and the SSR migration behind its live decentralised application, improving TTFB by 2.5s (17k to 1k modules at launch).
-- **[Polkamarkets App](https://app.polkamarkets.com/):** Shipped App v2 at WCAG 2.1 AA. ([commits](https://github.com/Polkamarkets/polkamarkets-web/commits?author=soujvnunes))
+- **Financial Assessment Tool (DevSignal):** AI extraction of audited PDFs into a KPI dashboard, behind a server-first processing boundary and a 7-day extraction cache.
+- **Sports Challenge App (EARNZY):** Greenfield Web3 youth-sports gamification COPPA-compliant MVP, featuring parental-gated passwordless auth for under-13s, shipped 40% ahead of scheduled 8-week sprint.
+- **[Palpitada](https://palpitada.com.br/) (MetaMatch):** Led the MVP and SSR migration for a live decentralized dApp, reducing module overhead from 17k to 1k and leveraging server caching to improve TTFB by 2.5s.
+- **[Polkamarkets App](https://app.polkamarkets.com/):** Audited UI/UX to achieve strict WCAG 2.1 AA compliance and refactored the codebase to embed test-driven development (TDD) principles. ([commits](https://github.com/Polkamarkets/polkamarkets-web/commits?author=soujvnunes))
 - **Wellz Migration (Wellhub):** QR-code onboarding that migrated ~500k users; design token system ([write-up](https://medium.com/@soujvnunes/uma-das-possíveis-maneiras-de-criar-design-tokens-d52a8c315b2)).
-- **[Bepro App](https://app.bepro.network):** Wallet-based auth for protocol users. ([commits](https://github.com/bepronetwork/web-network/commits?author=soujvnunes))
-- **[Institutional Virtual Gallery](https://sites.ufal.br/ufal-60-anos/) (UFAL):** Virtual exhibition built for poor-network visitors. ([commits](https://github.com/soujvnunes/virtual-exhibition/commits?author=soujvnunes) · [Behance](https://www.behance.net/gallery/140840807/WIP-UFAL-60-Anos-%28Redesign%29))
+- **[Bepro App](https://app.bepro.network):** Collaborated on wallet-based front-end and auth integration for protocol users. ([commits](https://github.com/bepronetwork/web-network/commits?author=soujvnunes))
+- **[Institutional Virtual Gallery](https://sites.ufal.br/ufal-60-anos/) (UFAL):** Built a virtual exhibition for poor-network visitors. ([commits](https://github.com/soujvnunes/virtual-exhibition/commits?author=soujvnunes) · [Behance](https://www.behance.net/gallery/140840807/WIP-UFAL-60-Anos-%28Redesign%29))
 
 #### Open-source
 
-- **[@soujvnunes/packages](https://github.com/soujvnunes/packages):** Six npm packages shared across my repos: ESLint/Prettier/Stylelint config factories, React utilities (hooked-context factory, error boundary, motion helpers), zero-dependency TypeScript utilities, and a serverless Mongoose/Typegoose layer.
-- **[themizer](https://github.com/soujvnunes/themizer):** _(archived)_ CLI turning CSS utility classes into type-safe design tokens. OKLCH palette expansion, framework detection for Next.js/Remix/Vite.
-- **[tailwind-expand](https://github.com/soujvnunes/tailwind-expand):** _(archived)_ Build-time expansion of CSS component aliases into Tailwind classes. Vite/PostCSS/Babel/SWC plugins, zero runtime.
+- **[@soujvnunes/packages](https://github.com/soujvnunes/packages):** Companion packages to my skills (currently private; treated as IP) shared across my repos.
+- **[themizer](https://github.com/soujvnunes/themizer):** _(archived)_ CLI turning CSS utility classes into type-safe design tokens.
+- **[tailwind-expand](https://github.com/soujvnunes/tailwind-expand):** _(archived)_ Build-time expansion of CSS component aliases into Tailwind classes.
 
 <details>
 <summary><strong>Work Experience</strong></summary>
