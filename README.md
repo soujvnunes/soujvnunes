@@ -7,7 +7,7 @@ Greenfield ownership from architecture to production for European, US and Brazil
 
 #### Products
 
-- [![2026 Car Enthusiast Web App @ Autograf](https://img.shields.io/badge/Autograf-Autograf-24292F?style=flat)](https://autograf.com.br/) Enthusiast-car auction marketplace launched in eight weeks: rolling per-car auctions with proxy bidding and soft close, a curation back office, and an escrow payments rail.
+- [![2026 | Car Enthusiast Web App @ Autograf](https://img.shields.io/badge/Autograf-Autograf-24292F?style=flat)](https://autograf.com.br/) Enthusiast-car auction marketplace launched in eight weeks: rolling per-car auctions with proxy bidding and soft close, a curation back office, and an escrow payments rail.
 - ![2026 | Financial Assessment Tool @ DevSignal](https://img.shields.io/badge/Financial%20Assessment%20Tool-DevSignal-24292F?style=flat) AI extraction of audited PDFs into a KPI dashboard, validated by accounting identities in code rather than a second model read, behind a server-first processing boundary and a 7-day extraction cache.
 - ![2025 | Sports Challenge Web App @ EARNZY](https://img.shields.io/badge/Sports%20Challenge%20App-EARNZY-24292F?style=flat) Greenfield Web3 youth-sports gamification COPPA-compliant MVP, featuring parental-gated passwordless auth for under-13s, shipped 40% ahead of scheduled 8-week sprint.
 - [![2025 | Palpitada Web App @ MetaMatch](https://img.shields.io/badge/Palpitada-MetaMatch-24292F?style=flat)](https://palpitada.com.br/) Led the MVP and SSR migration for a live decentralized dApp, reducing module overhead from 17k to 1k and leveraging server caching to improve TTFB by 2.5s.
