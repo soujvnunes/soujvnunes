@@ -123,6 +123,10 @@ Global corporate wellness platform, 26,000+ mental health support employees. QR-
 <details>
 <summary><strong>Technical Skills</strong></summary>
 
+**Product**
+
+![Product ownership](https://img.shields.io/badge/Product%20ownership-6E7781?style=flat) ![Release planning](https://img.shields.io/badge/Release%20planning-6E7781?style=flat) ![Product metrics](https://img.shields.io/badge/Product%20metrics-6E7781?style=flat)
+
 **AI Development**
 
 ![Claude Code](https://img.shields.io/badge/Claude%20Code-D97757?style=flat&logo=claude&logoColor=white) ![Anthropic API](https://img.shields.io/badge/Anthropic%20API-191919?style=flat&logo=anthropic&logoColor=white) ![GitHub Copilot](https://img.shields.io/badge/GitHub%20Copilot-000000?style=flat&logo=githubcopilot&logoColor=white) ![Lovable](https://img.shields.io/badge/Lovable-FF4785?style=flat) ![Agent Skills & Hooks](https://img.shields.io/badge/Agent%20Skills%20%26%20Hooks-6E7781?style=flat)
