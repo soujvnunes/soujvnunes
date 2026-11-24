@@ -3,11 +3,11 @@
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/soujvnunes/)
 [![Email](https://img.shields.io/badge/Email-EA4335?style=flat&logo=gmail&logoColor=white)](mailto:soujvnunes@gmail.com)
 
-Greenfield ownership from architecture to production for European, US and Brazilian startups: marketplaces, fintech and Web3, delivered with AI-augmented full stack development.
+Acting product owner, designer and engineer of Autograf, a marketplace for enthusiast cars in Brazil with timed, open bidding. Before it: greenfield products from architecture to production for European, US and Brazilian startups in marketplaces, fintech and Web3.
 
 #### Products
 
-- [![2026 | Car Enthusiast Web App @ Autograf](https://img.shields.io/badge/Autograf-Autograf-24292F?style=flat)](https://autograf.com.br/) Enthusiast-car auction marketplace launched in eight weeks: rolling per-car auctions with proxy bidding and soft close, a curation back office, and an escrow payments rail.
+- [![2026 | Car Enthusiast Web App @ Autograf](https://img.shields.io/badge/Autograf-Autograf-24292F?style=flat)](https://autograf.com.br/) Enthusiast-car marketplace with timed, open bidding, launched in eight weeks: one timed sale per car with proxy bidding and soft close, a curation back office, and escrow payments. I plan the releases, design the screens and build them.
 - ![2026 | Financial Assessment Tool @ DevSignal](https://img.shields.io/badge/Financial%20Assessment%20Tool-DevSignal-24292F?style=flat) AI extraction of audited PDFs into a KPI dashboard, validated by accounting identities in code rather than a second model read, behind a server-first processing boundary and a 7-day extraction cache.
 - ![2025 | Sports Challenge Web App @ EARNZY](https://img.shields.io/badge/Sports%20Challenge%20App-EARNZY-24292F?style=flat) Greenfield Web3 youth-sports gamification COPPA-compliant MVP, featuring parental-gated passwordless auth for under-13s, shipped 40% ahead of scheduled 8-week sprint.
 - [![2025 | Palpitada Web App @ MetaMatch](https://img.shields.io/badge/Palpitada-MetaMatch-24292F?style=flat)](https://palpitada.com.br/) Led the MVP and SSR migration for a live decentralized dApp, reducing module overhead from 17k to 1k and leveraging server caching to improve TTFB by 2.5s.
@@ -29,12 +29,13 @@ Greenfield ownership from architecture to production for European, US and Brazil
 
 ![Remote](https://img.shields.io/badge/Remote-2F81F7?style=flat) ![Contract](https://img.shields.io/badge/Contract-6E7781?style=flat) ![Aug 2026 – Present](https://img.shields.io/badge/Aug%202026%20%E2%80%93%20Present-24292F?style=flat) ![São Paulo, Brazil](https://img.shields.io/badge/S%C3%A3o%20Paulo,%20Brazil-24292F?style=flat)
 
-[Autograf](https://autograf.com.br/) is a curated enthusiast-car auction marketplace.
+[Autograf](https://autograf.com.br/) is a marketplace for enthusiast cars in Brazil where each car sells through timed, open bidding. I act as its product owner, designer and engineer: I turn what the founder, operations and legal counsel need into a weekly release plan, design the screens in Figma, build them and ship them.
 
-- **Built an auction marketplace in eight weeks as the only engineer** (Next.js, React, TypeScript, Supabase, Vercel): proxy bidding, soft close, automated lot closing; **207 pull requests merged** with test coverage **from zero to 330 files**
-- **Delivered escrow payments on Asaas (Pix):** first live transaction with payout holds on open disputes and an audit trail for chargeback defence
+- **Built the marketplace from a prototype to launch in eight weeks as the only engineer** (Next.js, React, TypeScript, Supabase, Vercel): one timed sale per car, proxy bidding, soft close, reserve price, automated closing; **570+ pull requests merged**, 37 releases, test coverage **from zero to 1,000+ files**
+- **Delivered escrow payments on Asaas (Pix):** seller payouts, payout holds while a dispute is open and an audit trail for chargeback defence
+- **Owned the product week by week:** listings with photos and video, a curation back office, vehicle inspection and history checks, identity checks, notices by e-mail and WhatsApp, and the metrics the team plans from
 - **Set the security baseline:** row-level security, MFA on admin actions, CodeQL, gitleaks and dependency audit on every pull request, PII scrubbing in Sentry
-- **Ran delivery on Claude Code:** issue to reviewed pull request with no hand-written code, written release notes each release; documented as the onboarding guide, and ran the technical interviews for the first Application Security Engineer
+- **Ran delivery on Claude Code** from issue to reviewed pull request, with written release notes each release; documented as the onboarding guide, and ran the technical interviews for the first Application Security Engineer
 
 ### DevSignal: Senior Software Engineer
 
@@ -121,6 +122,10 @@ Global corporate wellness platform, 26,000+ mental health support employees. QR-
 
 <details>
 <summary><strong>Technical Skills</strong></summary>
+
+**Product**
+
+![Product ownership](https://img.shields.io/badge/Product%20ownership-6E7781?style=flat) ![Release planning](https://img.shields.io/badge/Release%20planning-6E7781?style=flat) ![Product metrics](https://img.shields.io/badge/Product%20metrics-6E7781?style=flat)
 
 **AI Development**
 
