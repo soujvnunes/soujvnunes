@@ -3,7 +3,7 @@
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/soujvnunes/)
 [![Email](https://img.shields.io/badge/Email-EA4335?style=flat&logo=gmail&logoColor=white)](mailto:soujvnunes@gmail.com)
 
-Greenfield ownership from architecture to production for European, US and Brazilian startups: marketplaces, fintech and Web3, delivered with AI-augmented full stack development.
+Acting product owner, designer and engineer of Autograf, a marketplace for enthusiast cars in Brazil with timed, open bidding. Before it: greenfield products from architecture to production for European, US and Brazilian startups in marketplaces, fintech and Web3.
 
 #### Products
 
